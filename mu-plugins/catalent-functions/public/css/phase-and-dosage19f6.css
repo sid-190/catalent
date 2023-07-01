@@ -1,0 +1,511 @@
+/*!
+ * Bootstrap v5.0.2 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ *
+ * Catalent v1.0.5 by Mugo Web
+ * Jan 2022
+ */
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  border: 0;
+  overflow-anchor: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .accordion-button {
+    transition: none;
+  }
+}
+.accordion-button:not(.collapsed) {
+  color: #005f98;
+  background-color: #e6f0f6;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23005f98'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  transform: rotate(-180deg);
+}
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform 0.2s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .accordion-button::after {
+    transition: none;
+  }
+}
+.accordion-button:hover {
+  z-index: 2;
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: #80b4d4;
+  outline: 0;
+  box-shadow: 0 0 0 0.5rem rgba(0, 105, 169, 0.25);
+}
+
+.accordion-header {
+  margin-bottom: 0;
+}
+
+.accordion-item {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.accordion-item:not(:first-of-type) {
+  border-top: 0;
+}
+.accordion-body {
+  padding: 1rem 1.25rem;
+}
+
+.accordion-flush .accordion-collapse {
+  border-width: 0;
+}
+.accordion-flush .accordion-item {
+  border-right: 0;
+  border-left: 0;
+}
+.accordion-flush .accordion-item:first-child {
+  border-top: 0;
+}
+.accordion-flush .accordion-item:last-child {
+  border-bottom: 0;
+}
+.using-keyboard .phase-and-dosage-form button:focus, .using-keyboard .phase-and-dosage-form button:active, .using-keyboard .phase-and-dosage-form input:focus, .using-keyboard .phase-and-dosage-form input:active, .using-keyboard .phase-and-dosage-form select:focus, .using-keyboard .phase-and-dosage-form select:active, .using-keyboard .phase-and-dosage-form a:focus, .using-keyboard .phase-and-dosage-form a:active {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem #0069A9, 0 0 0 0.5rem #fff !important;
+}
+
+.phase-and-dosage-form {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: #f4f4f4;
+}
+.phase-and-dosage-form .container {
+  width: 100%;
+  padding: 0 !important;
+  margin: 0;
+}
+.phase-and-dosage-form .container .phase-header {
+  top: 0;
+  position: sticky;
+  z-index: 1;
+}
+@media (max-width: 767.98px) {
+  .phase-and-dosage-form .container .phase-header {
+    display: none !important;
+  }
+}
+.phase-and-dosage-form .container .mobile-phase-header {
+  top: 0;
+  position: sticky;
+  padding: 0.5rem 1rem;
+  background: #f4f4f4;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .phase-and-dosage-form .container .mobile-phase-header {
+    display: none !important;
+  }
+}
+.phase-and-dosage-form .container .mobile-phase-header .col {
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+.phase-and-dosage-form .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1rem;
+  margin-left: -1rem;
+  align-items: stretch !important;
+}
+.phase-and-dosage-form .container .row.phase-header {
+  margin-right: 0;
+  margin-left: 0;
+}
+.phase-and-dosage-form .container .row .phase {
+  flex: 0 0 20%;
+  max-width: 20%;
+  padding: 0;
+}
+.phase-and-dosage-form .container .row .dditem {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  display: flex;
+}
+.phase-and-dosage-form .container .row .dditem.dditem-1 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+.phase-and-dosage-form .container .row .dditem.dditem-2 {
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+.phase-and-dosage-form .container .row .dditem.dditem-3 {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+.phase-and-dosage-form .container .row .dditem.dditem-4 {
+  flex: 0 0 80%;
+  max-width: 80%;
+}
+.phase-and-dosage-form .container .row .dditem.dditem-5 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.phase-and-dosage-form .container .row .dditem.ddoffset-1 {
+  margin-left: 20%;
+}
+.phase-and-dosage-form .container .row .dditem.ddoffset-2 {
+  margin-left: 40%;
+}
+.phase-and-dosage-form .container .row .dditem.ddoffset-3 {
+  margin-left: 60%;
+}
+.phase-and-dosage-form .container .row .dditem.ddoffset-4 {
+  margin-left: 80%;
+}
+.phase-and-dosage-form .mobile-phase-header label {
+  display: block;
+  margin-bottom: 1px;
+}
+.phase-and-dosage-form .mobile-phase-header select {
+  border: 1px solid #0069A9;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  width: 100%;
+  font-size: 1rem;
+}
+.phase-and-dosage-form .mobile-phase-header select:after, .phase-and-dosage-form .mobile-phase-header select:before {
+  box-sizing: border-box;
+}
+.phase-and-dosage-form .phase.phase-1 .header {
+  background: #005F9A;
+}
+.phase-and-dosage-form .phase.phase-2 .header {
+  background: #0069A9;
+}
+.phase-and-dosage-form .phase.phase-3 .header {
+  background: #1777B1;
+}
+.phase-and-dosage-form .phase.phase-4 .header {
+  background: #2E84B9;
+}
+.phase-and-dosage-form .phase.phase-5 .header {
+  background: #4692C0;
+}
+.phase-and-dosage-form .phase .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  padding: 1.2rem 1rem 1rem 1rem;
+  text-align: center;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .phase-and-dosage-form .phase .header {
+    font-size: 0.8rem;
+  }
+}
+.phase-and-dosage-form .dditem .btn-dditem {
+  background: #f2f2f2;
+  color: #261c02;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  flex: 1 1 100%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .phase-and-dosage-form .dditem .btn-dditem {
+    font-size: 0.72rem;
+  }
+}
+.phase-and-dosage-form .business-unit {
+  padding-top: 1rem;
+}
+.phase-and-dosage-form .business-unit.oral-dose-forms .accordion-item .accordion-header button {
+  background: #652f6b;
+  color: #fff;
+}
+.phase-and-dosage-form .business-unit.oral-dose-forms .dditem .btn-dditem {
+  background: #f3dff8;
+  color: #8A4D98;
+}
+.phase-and-dosage-form .business-unit.oral-dose-forms .modal .modal-dialog .modal-content .modal-footer {
+  background: #652f6b;
+  color: #fff;
+}
+.phase-and-dosage-form .business-unit.oral-dose-forms .modal .modal-dialog .modal-content .modal-footer a {
+  background: #f3dff8;
+  color: #8A4D98;
+}
+.phase-and-dosage-form .business-unit.biologics-parenterals .accordion-item .accordion-header button {
+  background: #5cb7b2;
+  color: #fff;
+}
+.phase-and-dosage-form .business-unit.biologics-parenterals .dditem .btn-dditem {
+  background: #dbeeeb;
+  color: #007566;
+}
+.phase-and-dosage-form .business-unit.biologics-parenterals .modal .modal-dialog .modal-content .modal-footer {
+  background: #5cb7b2;
+  color: #fff;
+}
+.phase-and-dosage-form .business-unit.biologics-parenterals .modal .modal-dialog .modal-content .modal-footer a {
+  background: #dbeeeb;
+  color: #007566;
+}
+.phase-and-dosage-form .business-unit.inhalation-nasal .accordion-item .accordion-header button {
+  background: #004d95;
+  color: #fff;
+}
+.phase-and-dosage-form .business-unit.inhalation-nasal .dditem .btn-dditem {
+  background: #d9e6ed;
+  color: #0069aa;
+}
+.phase-and-dosage-form .business-unit.inhalation-nasal .modal .modal-dialog .modal-content .modal-footer {
+  background: #004d95;
+  color: #fff;
+}
+.phase-and-dosage-form .business-unit.inhalation-nasal .modal .modal-dialog .modal-content .modal-footer a {
+  background: #d9e6ed;
+  color: #0069aa;
+}
+.phase-and-dosage-form .accordion-item {
+  border: none;
+  background: none;
+}
+.phase-and-dosage-form .accordion-item .accordion-header button {
+  background: #f2f2f2;
+  color: #261c02;
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.phase-and-dosage-form .accordion-item .accordion-header button .section-name {
+  flex: 1 1 auto;
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 2px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .phase-and-dosage-form .accordion-item .accordion-header button .section-name {
+    font-size: 0.8rem;
+  }
+}
+.phase-and-dosage-form .accordion-item .accordion-header button .icon {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  transform: rotate(-180deg);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.phase-and-dosage-form .accordion-item .accordion-header button.collapsed {
+  background: #e6e6e6;
+  color: #686868;
+}
+.phase-and-dosage-form .accordion-item .accordion-header button.collapsed .icon {
+  transform: rotate(0deg);
+}
+.phase-and-dosage-form .accordion-item .accordion-body {
+  padding: 0;
+  position: relative;
+}
+.phase-and-dosage-form .accordion-item .accordion-body .lines {
+  position: absolute;
+  height: calc(100% + 2rem);
+  width: 100%;
+  z-index: 0;
+  top: -1rem;
+  margin-left: 0;
+  border-left: 2px solid #b8b8b8;
+  border-right: 2px solid #b8b8b8;
+  border-bottom: 2px solid #b8b8b8;
+}
+.phase-and-dosage-form .accordion-item .accordion-body .lines .phase-1-2,
+.phase-and-dosage-form .accordion-item .accordion-body .lines .phase-2-3,
+.phase-and-dosage-form .accordion-item .accordion-body .lines .phase-3-4,
+.phase-and-dosage-form .accordion-item .accordion-body .lines .phase-4-5 {
+  border-left: 2px solid #b8b8b8;
+  height: 100%;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.phase-and-dosage-form .accordion-item .accordion-body .lines .phase-1-2 {
+  left: calc(20% - 2px);
+}
+.phase-and-dosage-form .accordion-item .accordion-body .lines .phase-2-3 {
+  left: calc(40% - 1px);
+}
+.phase-and-dosage-form .accordion-item .accordion-body .lines .phase-3-4 {
+  left: calc(60% - 1px);
+}
+.phase-and-dosage-form .accordion-item .accordion-body .lines .phase-4-5 {
+  left: 80%;
+}
+.phase-and-dosage-form .accordion-item .accordion-body .row {
+  position: relative;
+  margin: 1rem 0;
+}
+.phase-and-dosage-form .modal {
+  background: rgba(0, 0, 0, 0.75);
+}
+.phase-and-dosage-form .modal .modal-dialog .modal-content .modal-header {
+  padding: 1rem;
+}
+.phase-and-dosage-form .modal .modal-dialog .modal-content .modal-header img {
+  height: 40px;
+  width: 40px;
+  margin-right: 1rem;
+}
+.phase-and-dosage-form .modal .modal-dialog .modal-content .modal-header div {
+  flex: 1 1 auto;
+  margin-right: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0069A9;
+}
+.phase-and-dosage-form .modal .modal-dialog .modal-content .modal-header button {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FFE8E8;
+  background: #FFE8E8;
+  cursor: pointer;
+  height: 34px;
+  width: 34px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.phase-and-dosage-form .modal .modal-dialog .modal-content .modal-header button span {
+  color: #A20000;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.phase-and-dosage-form .modal .modal-dialog .modal-content .modal-header button:hover, .phase-and-dosage-form .modal .modal-dialog .modal-content .modal-header button:active, .phase-and-dosage-form .modal .modal-dialog .modal-content .modal-header button:focus {
+  border: 1px solid #FFD1D1;
+  background: #FFD1D1;
+}
+.phase-and-dosage-form .modal .modal-dialog .modal-content .modal-header button:hover span, .phase-and-dosage-form .modal .modal-dialog .modal-content .modal-header button:active span, .phase-and-dosage-form .modal .modal-dialog .modal-content .modal-header button:focus span {
+  font-size: 1.4rem;
+}
+.phase-and-dosage-form .modal .modal-dialog .modal-content .modal-body {
+  padding: 1rem;
+  color: #261c02;
+  font-size: 1rem;
+}
+.phase-and-dosage-form .modal .modal-dialog .modal-content .modal-body .phases-list {
+  margin-bottom: 1rem;
+}
+.phase-and-dosage-form .modal .modal-dialog .modal-content .modal-body .phases-list span {
+  font-size: 0.7rem;
+  background: #0069A9;
+  color: #ffffff;
+  padding: 0.4rem;
+  display: inline-block;
+  line-height: 1;
+}
+.phase-and-dosage-form .modal .modal-dialog .modal-content .modal-body a {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.phase-and-dosage-form .modal .modal-dialog .modal-content .modal-footer {
+  display: initial;
+  background: #D1E4EF;
+  padding: 1rem;
+  color: #261c02;
+  font-size: 1rem;
+}
+.phase-and-dosage-form .modal .modal-dialog .modal-content .modal-footer p {
+  margin: 0;
+}
+.phase-and-dosage-form .modal .modal-dialog .modal-content .modal-footer a {
+  background: #E8F1F7;
+  color: #0069A9;
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none !important;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+@media (max-width: 767.98px) {
+  .phase-and-dosage-form .container .row .dditem {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin: 1rem 0 0 0 !important;
+    display: none;
+  }
+  .phase-and-dosage-form .container .accordion-body .lines {
+    display: none;
+  }
+  .phase-and-dosage-form .container .accordion-body .row {
+    margin: 0;
+  }
+  .phase-and-dosage-form .phase-content.view-phase-0 .dditem.phase-0 {
+    display: flex;
+  }
+  .phase-and-dosage-form .phase-content.view-phase-1 .dditem.phase-1 {
+    display: flex;
+  }
+  .phase-and-dosage-form .phase-content.view-phase-2 .dditem.phase-2 {
+    display: flex;
+  }
+  .phase-and-dosage-form .phase-content.view-phase-3 .dditem.phase-3 {
+    display: flex;
+  }
+  .phase-and-dosage-form .phase-content.view-phase-4 .dditem.phase-4 {
+    display: flex;
+  }
+}
+
+.modal-open .et_builder_inner_content {
+  z-index: 1050;
+}
+.modal-open .modal-backdrop {
+  display: none;
+}
+
+/*# sourceMappingURL=phase-and-dosage.css.map */
