@@ -1,0 +1,2458 @@
+/*
+Catalent styles file
+Use this file to add style to Catalent site only
+*/
+
+/*
+Styles from the Divi Options Custom CSS Pane
+*/
+
+/* All Typography Whitney */
+body { 
+font-family: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+font-style: normal;
+font-weight: 400;
+}
+
+/* Sub Menu Icon Fix */
+.et-menu li li.menu-item-has-children>a:first-child:after {
+    right: 0px;
+}
+
+/* Vertical Align Side by Side Modules */
+.ds-vertical-align { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+}
+
+/* Widget Links */
+.et_pb_bg_layout_light .et_pb_widget li a {
+    color: #261C02;
+}
+
+/* Styling for Import Post Dividers */
+h5.dashed {
+    text-transform: uppercase;
+    font-size: 19px!important;
+    color: #016ba9!important;
+    text-decoration: none;
+    font-weight: 500;
+    border-top: solid 1px #d1d4d6;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+/* Search Results Sidebar Button */
+.search_button  {
+    color: #ffffff!important;
+    border-radius: 0px;
+    background-color: #0069aa!important;
+    width: 100%;
+    transition: all 300ms ease 0ms;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.7em!important;
+}
+.search_button:hover {
+    color: #ffffff!important;
+    background-color: #0069aa!important;
+}
+.search_button:after {
+    position: absolute;
+    margin-left: -1em;
+    opacity: 0;
+    text-shadow: none;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: none;
+    line-height: 1em;
+    text-transform: none;
+    content: attr(data-icon);
+    color: #ffffff;
+    left: auto;
+}
+.search_button_wrapper .search_button, .search_button_wrapper .search_button:hover {
+    padding-top: 15px!important;
+    padding-right: 20px!important;
+    padding-bottom: 15px!important;
+    padding-left: 20px!important;
+    display: inline-block;
+    text-align: center;
+}
+
+/* HomeSlider height adjustment ----------------*/
+@media only screen and ( min-width:981px ) {  
+  
+.homeSlider.et_pb_slider, .homeSlider.et_pb_slider .et_pb_container {
+height: 500px !important; 
+width: 100% !important; 
+}
+.homeSlider.et_pb_slider, .homeSlider.et_pb_slider .et_pb_slide {
+max-height: 500px; 
+}
+.homeSlider.et_pb_slider .et_pb_slide_description {
+position: relative;
+top: 8px; /*---Text distance from top sometimes better to use percent.---*/
+padding-top: 0 !important;
+padding-bottom:0 !important;
+height:auto !important;
+  }
+}
+.et_pb_slider .et_pb_slide>.et_pb_container {
+    width: 80%;
+    max-width: 1080px;
+}
+  
+  .et_pb_slide_video {
+    left:55%;
+}
+/* h4 Style */
+h4 {
+font-size: 19px!important;
+font-weight: normal;
+color: #016ba9 !important;
+}
+
+/* Underline Links */
+
+.et_pb_text_inner a {
+    text-decoration: underline!important;
+    font-weight: 500;
+}
+
+ p a {
+    text-decoration: underline!important;
+    font-weight: 500;
+}
+
+li a {
+    text-decoration: underline!important;
+    font-weight: 500;
+}
+
+.fullwidth-menu a {
+    text-decoration: none!important;
+}
+
+/* Location Sidebar Styling */
+
+.et_pb_sidebar_0.et_pb_widget_area h4.widgettitle a {
+    color: #016ba9!important;
+    text-decoration: none!important;
+  text-transform: uppercase;
+  font-size: 19px;
+}
+.et_pb_widget.widget_nav_menu ul.menu li.current_page_item a {
+color: #016ba9!important;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+/* Products Sidebar Nav Spacing */
+.products_sidebar ul li {
+    margin-bottom: 2em!important;
+}
+.products_sidebar li > a {
+    padding-bottom: 0px!important;
+}
+/* Bullet List Styling */
+ul>li ul {
+    margin-left: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* Equal Blog Grid */
+@media only screen and (min-width: 768px) {
+.custom_blog .et_pb_post {
+min-height: 400px;
+max-height: 400px;
+}
+}
+
+
+@media only screen and (min-width: 768px) {
+.custom_events .et_pb_post {
+min-height: 175px;
+max-height: 175px;
+}
+}
+
+
+/* Footer Borders */
+#main-footer {
+    border-top: 1px solid #b8b8b8;
+}
+#et-footer-nav {
+    border-top: 1px solid #b8b8b8;
+}
+
+/* Gravity Form Field Fix */
+.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+    font-size: 14px;
+    color: #333;
+    font-family: "Whitney SSm A",sans-serif !important;
+    border-radius: 5px;
+    height: 51px;
+    letter-spacing: normal;
+    padding: 2px 0 2px 8px;
+    line-height: 26px;
+}
+.gform_wrapper .gform_footer input.button, body .gform_wrapper .gform_page_footer input.button {
+    background-color: #016ba9!important;
+    color: #ffffff!important;
+    border-width: 2px!important;
+    border-color: #ffffff!important;
+    border-radius: 3px!important;
+    font-family: "Whitney SSm A","Whitney SSm B",Helvetica,Arial,sans-serif!important;
+    font-size: 20px!important;
+    letter-spacing: 0px!important;
+}
+.gform_wrapper select {
+    color: #333!important;
+}
+
+.gchoice_select_all, .gform_wrapper ul.gfield_checkbox li input[type=checkbox]:checked+label, .gform_wrapper ul.gfield_radio li input[type=radio]:checked+label {
+    font-weight: 400;
+}
+
+/* Gravity Form Message Text Field Height Fix */
+.contactmessage textarea.large {
+    height: 160px;
+    width: 100%;
+}
+
+.gform_wrapper textarea.textarea {
+    color: #000!important;
+}
+
+/* Superscrip Fix */
+sup {
+    font-size: 0.6em; vertical-align: super; 
+    bottom: 0;
+}
+
+/* Subscript Fix */
+    sub {
+    font-size: 0.6em; 
+    vertical-align: sub; bottom: 0;
+  top: 0;
+}
+
+/* Blub Icons Align Right */
+.et_pb_blurb_position_left .et_pb_main_blurb_image {
+    float:right;
+}
+
+
+/* Blurb Image Size Fix */
+.et_pb_blurb_position_left .et_pb_main_blurb_image { 
+    width: 50px !important; 
+}
+.et_pb_blurb_position_left img {
+    height: 50px !important; 
+}
+.et_pb_blurb_position_left .et-pb-icon {
+     font-size: 50px !important;
+}
+
+/* Footer Widget Title Alignment */
+.footer-widget h4 {
+    text-align: center;
+}
+
+/* Arrow Icon for Bullet Link List */
+.slideTt {
+    text-decoration: underline;
+    cursor: pointer;
+    padding-right: 15px;
+    background: url(../../../../uploads/sites/6/2018/01/black-arrow-left.png) right center no-repeat;
+}
+
+/* Back to Top Link Styling */
+.back-to-top {
+    float: right;
+    padding-left: 10px;
+    color: #0069aa;
+    text-decoration: none;
+    background: url(../../../../uploads/sites/6/2018/01/back-to-top.png) left center no-repeat;
+}
+
+/*  Filter Posts Expert Content  */
+#filterposts .tag-article {
+  background-color: #ffffff;
+}
+#filterposts .tag-article h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+
+}
+#filterposts .tag-article .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-article .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-article:before {
+  content: "ARTICLE";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-brochure {
+  background-color: #ffffff;
+}
+#filterposts .tag-brochure h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+
+}
+#filterposts .tag-brochure .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-brochure .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-brochure:before {
+  content: "BROCHURE";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-case-study {
+  background-color: #ffffff;
+}
+#filterposts .tag-case-study h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-case-study .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-case-study .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-case-study:before {
+  content: "CASE STUDY";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-ebook {
+  background-color: #ffffff;
+}
+#filterposts .tag-ebook h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-ebook .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-ebook .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-ebook:before {
+  content: "EBOOK";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-executive-summary {
+  background-color: #ffffff;
+}
+#filterposts .tag-executive-summary h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-executive-summary .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-executive-summary .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-executive-summary:before {
+  content: "EXECUTIVE SUMMARY";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-infographic {
+  background-color: #ffffff;
+}
+#filterposts .tag-infographic h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-infographic .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-infographic .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-infographic:before {
+  content: "INFOGRAPHIC";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-offering-fact-sheet {
+  background-color: #ffffff;
+}
+#filterposts .tag-offering-fact-sheet h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-offering-fact-sheet .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-offering-fact-sheet .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-offering-fact-sheet:before {
+  content: "OFFERING FACT SHEET";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-poster {
+  background-color: #ffffff;
+}
+#filterposts .tag-poster h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-poster .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-poster .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-poster:before {
+  content: "POSTER";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-presentation {
+  background-color: #ffffff;
+}
+#filterposts .tag-presentation h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-presentation .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-presentation .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-presentation:before {
+  content: "PRESENTATION";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-reports {
+  background-color: #ffffff;
+}
+#filterposts .tag-reports h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-reports .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-reports .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-reports:before {
+  content: "REPORTS";
+  background: #ffffff;
+  color: #0069aa;
+}#filterposts .tag-success-stories {
+  background-color: #ffffff;
+}
+#filterposts .tag-success-stories h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-success-stories .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-success-stories .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-success-stories:before {
+  content: "SUCCESS STORIES";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-video {
+  background-color: #ffffff;
+}
+#filterposts .tag-video h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-video .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-video .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-video:before {
+  content: "VIDEO";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-webinars {
+  background-color: #ffffff;
+}
+#filterposts .tag-webinars h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-webinars .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-webinars .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-webinars:before {
+  content: "WEBINARS";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-white-papers {
+  background-color: #ffffff;
+}
+#filterposts .tag-white-papers h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-white-papers .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-white-papers .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-white-papers:before {
+  content: "WHITE PAPERS";
+  background: #ffffff;
+  color: #0069aa;
+}
+#filterposts {
+  position: relative;
+}
+
+#filterposts .et_pb_post:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 0 5px 0;
+  padding: 7px 21px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#filterposts .et_pb_post:after {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  bottom: 0;
+  border-radius: 4px;
+}
+#filter-buttons button.mixitup-control-active{
+  background: #0069aa;
+}
+#filterposts .et_pb_post {
+  border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 45px 20px 20px;
+    margin: 2%;
+    float: left;
+    width: 96%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+#filterposts .et_pb_post .post-content a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 80px 0;
+  top: 0;
+  text-transform: uppercase;
+  font-family: "Whitney SSm A",sans-serif !important;
+  font-weight: 400;
+  font-size: 20px;
+  opacity: 0;
+  transition: all .2s;
+}
+#filterposts .et_pb_post:hover .post-content a {
+  opacity: 1;
+}
+
+#filter-buttons {
+  display: block;
+  text-align: left;
+  width: 96%;
+  background: #f6f8f9;
+  font-family: "Whitney SSm A",sans-serif !important;
+  border-radius: 0;
+  margin: 0 2%;
+}
+#filter-buttons button {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  margin: 5px 0px;
+  font-size: 15px;
+  background: #c2c2c2;
+  font-weight: 500;
+  color: #ffffff;
+  font-family: "Whitney SSm A",sans-serif !important;
+  transition: all .2s;
+  text-align: left;
+}
+#filter-buttons button:hover {
+  border-bottom: none;
+}
+#filter-buttons .filter-btn.active {
+  background: #0069aa !important;
+}
+
+@media screen and (max-width: 980px) {
+  #filterposts .et_pb_post {
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+  #filterposts .et_pb_post h2.entry-title {
+    font-size: 18px !important;
+  }
+  #filterposts .et_pb_post .post-content a {
+    position: relative;
+    width: auto;
+    background: transparent;
+    opacity: 1;
+    padding: 0;
+    display: inline-block;
+    font-size: 13px;
+  }
+
+  #filterposts .et_pb_post:after {
+    display: none;
+  }
+}
+
+/*  Filter Posts Site Tours*/
+
+#filterposts .category-asia-pacific {
+  background-color: #ffffff;
+}
+#filterposts .category-asia-pacific h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .category-asia-pacific .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .category-asia-pacific .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .category-asia-pacific:before {
+  content: "ASIA PACIFIC";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .category-europe {
+  background-color: #ffffff;
+}
+#filterposts .category-europe h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .category-europe .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .category-europe .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .category-europe:before {
+  content: "EUROPE";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .category-latin-america {
+  background-color: #ffffff;
+}
+#filterposts .category-latin-america h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .category-latin-america .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .category-latin-america .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .category-latin-america:before {
+  content: "LATIN AMERICA";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .category-north-america {
+  background-color: #ffffff;
+}
+#filterposts .category-north-america h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .category-north-america .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .category-north-america .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .category-north-america:before {
+  content: "NORTH AMERICA";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-oral {
+  background-color: #ffffff;
+}
+#filterposts .tag-oral h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-oral .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-oral .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-oral:before {
+  content: "ORAL DEVELOPMENT & MANUFACTURING";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-development-bioavailability {
+  background-color: #ffffff;
+}
+#filterposts .tag-development-bioavailability h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-development-bioavailability .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-development-bioavailability .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-development-bioavailability:before {
+  content: "DEVELOPMENT & BIOAVAILABILITY";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-dose-form-design {
+  background-color: #ffffff;
+}
+#filterposts .tag-dose-form-design h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-dose-form-design .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-dose-form-design .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-dose-form-design:before {
+  content: "DOSE FORM DESIGN";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-oral-technologies {
+  background-color: #ffffff;
+}
+#filterposts .tag-oral-technologies h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-oral-technologies .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-oral-technologies .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-oral-technologies:before {
+  content: "ORAL TECHNOLOGIES";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-softgel-technologies {
+  background-color: #ffffff;
+}
+#filterposts .tag-softgel-technologies h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-softgel-technologies .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-softgel-technologies .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-softgel-technologies:before {
+  content: "SOFTGEL TECHNOLOGIES";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-oral-manufacturing {
+  background-color: #ffffff;
+}
+#filterposts .tag-oral-manufacturing h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-oral-manufacturing .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-oral-manufacturing .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-oral-manufacturing:before {
+  content: "ORAL MANUFACTURING";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-small-molecule-analytical {
+  background-color: #ffffff;
+}
+#filterposts .tag-small-molecule-analytical h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-small-molecule-analytical .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-small-molecule-analytical .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-small-molecule-analytical:before {
+  content: "SMALL MOLECULE ANALYTICAL";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-inhalation {
+  background-color: #ffffff;
+}
+#filterposts .tag-inhalation h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-inhalation .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-inhalation .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-inhalation:before {
+  content: "INHALATION DEVELOPMENT & MANUFACTURING";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-ophthalmic {
+  background-color: #ffffff;
+}
+#filterposts .tag-ophthalmic h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-ophthalmic .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-ophthalmic .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-ophthalmic:before {
+  content: "OPHTHALMIC";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-small-molecule-injectable {
+  background-color: #ffffff;
+}
+#filterposts .tag-small-molecule-injectable h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-small-molecule-injectable .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-small-molecule-injectable .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-small-molecule-injectable:before {
+  content: "SMALL MOLECULE INJECTABLE";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-biologics {
+  background-color: #ffffff;
+}
+#filterposts .tag-biologics h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-biologics .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-biologics .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-biologics:before {
+  content: "BIOLOGICS DEVELOPMENT & MANUFACTURING";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-biological-analytical-services {
+  background-color: #ffffff;
+}
+#filterposts .tag-biological-analytical-services h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-biological-analytical-services .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-biological-analytical-services .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-biological-analytical-services:before {
+  content: "BIOLOGICAL ANALYTICAL SERVICES";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-biologics-development {
+  background-color: #ffffff;
+}
+#filterposts .tag-biologics-development h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-biologics-development .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-biologics-development .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-biologics-development:before {
+  content: "BIOLOGICS DEVELOPMENT";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-drug-product-manufacturing {
+  background-color: #ffffff;
+}
+#filterposts .tag-drug-product-manufacturing h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-drug-product-manufacturing .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-drug-product-manufacturing .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-drug-product-manufacturing:before {
+  content: "DRUG PRODUCT MANUFACTURING";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-drug-substance-manufacturing {
+  background-color: #ffffff;
+}
+#filterposts .tag-drug-substance-manufacturing h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-drug-substance-manufacturing .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-drug-substance-manufacturing .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-drug-substance-manufacturing:before {
+  content: "DRUG SUBSTANCE MANUFACTURING";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-clinical-supply-services {
+  background-color: #ffffff;
+}
+#filterposts .tag-clinical-supply-services h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-clinical-supply-services .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-clinical-supply-services .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-clinical-supply-services:before {
+  content: "CLINICAL SUPPLY SOLUTIONS";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-comparator-sourcing {
+  background-color: #ffffff;
+}
+#filterposts .tag-comparator-sourcing h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-comparator-sourcing .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-comparator-sourcing .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-comparator-sourcing:before {
+  content: "COMPARATOR SOURCING";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-clinical-supply-management {
+  background-color: #ffffff;
+}
+#filterposts .tag-clinical-supply-management h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-clinical-supply-management .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-clinical-supply-management .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-clinical-supply-management:before {
+  content: "CLINICAL SUPPLY MANAGEMENT";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-clinical-packaging-distribution-services {
+  background-color: #ffffff;
+}
+#filterposts .tag-clinical-packaging-distribution-services h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-clinical-packaging-distribution-services .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-clinical-packaging-distribution-services .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-clinical-packaging-distribution-services:before {
+  content: "CLINICAL PACKAGING & DISTRIBUTION SERVICES";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-cell-gene-therapy {
+  background-color: #ffffff;
+}
+#filterposts .tag-cell-gene-therapy h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-cell-gene-therapy .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-cell-gene-therapy .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-cell-gene-therapy:before {
+  content: "CELL & GENE THERAPIES";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-cell-therapy {
+  background-color: #ffffff;
+}
+#filterposts .tag-cell-therapy h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-cell-therapy .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-cell-therapy .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-cell-therapy:before {
+  content: "CELL THERAPY";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-gene-therapy {
+  background-color: #ffffff;
+}
+#filterposts .tag-gene-therapy h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-gene-therapy .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-gene-therapy .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-gene-therapy:before {
+  content: "GENE THERAPY";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-consumer-health {
+  background-color: #ffffff;
+}
+#filterposts .tag-consumer-health h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-consumer-health .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-consumer-health .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-consumer-health:before {
+  content: "CONSUMER HEALTH";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-beauty {
+  background-color: #ffffff;
+}
+#filterposts .tag-beauty h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-beauty .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-beauty .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-beauty:before {
+  content: "BEAUTY";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-nutritional-supplements {
+  background-color: #ffffff;
+}
+#filterposts .tag-nutritional-supplements h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-nutritional-supplements .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-nutritional-supplements .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-nutritional-supplements:before {
+  content: "NUTRITIONAL SUPPLEMENTS";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+#filterposts .tag-over-the-counter {
+  background-color: #ffffff;
+}
+#filterposts .tag-over-the-counter h2.entry-title {
+  color: #261C02;
+  line-height: 1.4em!important;
+}
+#filterposts .tag-over-the-counter .post-content p {
+  color: #261C02 !important;
+}
+#filterposts .tag-over-the-counter .post-content a {
+  color: #ffffff !important;
+  background: rgba(0, 105, 170, 0.9);
+}
+#filterposts .tag-over-the-counter:before {
+  content: "OVER-THE-COUNTER";
+  background: #ffffff;
+  color: #0069aa;
+}
+
+/* Additional CSS for Better Biotech Posts */ 
+
+.filterpostsbiotech .et_pb_post {
+    margin: 5%!important;
+    width: 90%!important;
+    height: 322px!important;
+}
+.filterpostsbiotech .et_pb_post .post-content a { 
+  padding: 140px 0!important;
+}
+
+/* Leadership Page Layout Styles */ 
+  
+  .team-profile {
+      position: relative;
+      top: 0;
+      -webkit-transition: top 1s;
+      transition: top 1s;
+      transition-delay: 0s;
+      transition-duration: .10s;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.25,.1,.25,1);
+      padding-bottom: 18px;
+      padding: 10px;
+  }
+
+
+  .team-profile:hover {
+      top: -5px;
+      box-shadow: 0 9px 30px rgba(33, 37, 47, 0.07);
+  }
+
+  .team-profile .et_pb_team_member_image {
+      border-radius: 100%!important;
+      overflow: hidden;
+    margin-bottom: 20px;
+    border: 3px solid #f3f3f3;
+  }
+
+  .team-profile .et_pb_team_member_description {
+      display: block;
+      width: 100%!important;
+    text-align: center;
+      padding-bottom: 15px;
+  }
+
+  .team-profile .et_pb_member_position {
+      padding-bottom: 17px;
+      color: #aaa;
+      text-align: center;
+  }
+
+  .team-profile p {
+      text-align: center;
+  }
+  
+
+  .team-profile .et_pb_member_social_links {
+      text-align: center;
+      border-top: 1px solid #ececec;
+      padding-top: 12px;
+  }
+
+  .email-person:before {
+      font-family: 'ETmodules';
+      content: "e076";
+      margin-right: 5px;
+  } 
+  
+  .team-bio img {
+      border-radius: 100%!important;
+      overflow: hidden;
+      border: 3px solid #f3f3f3;
+  }
+  
+@media only screen and (max-width: 980px) {
+
+  .et_pb_column .et_pb_team_member_image {
+      float: none!important;
+      text-align: center!important;
+      margin: 0 auto!important;
+    max-width: 300px!important;
+    margin-bottom: 32px!important;
+  }
+
+  .team-page:hover {
+      top: 0px;
+      box-shadow: 0 9px 30px rgba(33, 37, 47, 0);
+  }
+}
+  
+/* Team "See Bio Button" Styles */ 
+
+  .meet-person-button {
+    margin-top:15px;
+    margin-bottom:15px;
+      padding: 10px 20px;
+    background-color: #016ba9;
+    color: white!important;
+    text-decoration: none!important;
+  } 
+
+  .meet-person-button:hover {
+    background-color: #ffffff;
+    color: #016ba9!important;
+    border: 1px solid #016ba9;
+    text-decoration: none!important;
+  }
+
+.menu-primary-menu-1 .free-search-close {
+  display:none;
+}
+  
+/* Interactive Tool Styles */
+.bodyBg {
+    background: #fff;
+}
+
+.main-content .main-content-page {
+    text-align: center;
+}
+
+.navTool {
+    max-width: 948px;
+    border-bottom-color: #dedede;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    margin: 20px auto 30px;
+    text-align: left;
+}
+
+.navTool h1 {
+    font-size: 26px;
+    color: #0069aa;
+    text-align: center;
+    font-weight: normal;
+    margin: 58px 0 12px;
+    font-family: 'Whitney Book';
+    line-height: 30px;
+}
+
+@media (max-width: 767px) {
+    .navTool h1 {
+        margin: 56px 0 26px;
+        line-height: 32px;
+        padding: 0 65px;
+    }
+}
+
+.navTool .header {
+    margin-bottom: 30px;
+}
+
+.navTool .header .sub_text {
+    font-size: 14px;
+    font-family: 'Whitney Book';
+    color: black;
+    line-height: 22px;
+}
+
+
+/*phases */
+
+.clearfix:after {
+    clear: both;
+    display: block;
+    content: "";
+    visibility: hidden;
+    height: 0;
+    font-size: 0;
+}
+
+*html .clearfix {
+    zoom: 1;
+}
+
+
+/* IE6 */
+
+*:first-child+html .clearfix {
+    zoom: 1;
+}
+
+
+/* IE7 */
+
+.phases ul {
+    padding-left: 1px;
+    min-width: 950px;
+}
+
+.phases li {
+    background: url(../../../../uploads/sites/6/2019/02/phases.png) no-repeat 0 0;
+    float: left;
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    margin-left: -10px;
+    font-size: 12px;
+    text-shadow: 0 1px 2px #053350;
+    text-transform: uppercase;
+    font-family: 'Whitney Book';
+}
+
+.phases li.begin {
+    background: url(../../../../uploads/sites/6/2019/02/phases_begin.png) no-repeat;
+    width: 143px;
+    height: 40px;
+    margin-left: 0;
+}
+
+
+/* slide content*/
+
+.navTool .contents {
+    font-family: Verdana;
+    width: 948px;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f2f2f2');
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f2f2f2));
+    background: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+}
+
+.content_bg {
+    background-image: url(../../../../uploads/sites/6/2019/02/content_bg.png);
+    background-repeat: repeat-y;
+    width: 948px;
+    height: 100%;
+    padding: 10px 0;
+}
+
+
+/*.navTool .contents .content_bg{ padding-bottom:0px;}*/
+
+.navTool .item_list {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 10px;
+    margin-left: 14px;
+}
+
+.navTool .item_list .items {
+    height: 48px;
+    line-height: 48px;
+    color: #9654a6;
+    background: #f3dff8;
+    border-bottom: 1px solid #c6c6c7;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    margin: 0 14px 0 0;
+    position: relative;
+    clear: both;
+    cursor: pointer;
+}
+
+.navTool .item_list.special {
+    border-bottom: 0;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.navTool .items a {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    left: 50px;
+    top: 13px;
+    background: url(../../../../uploads/sites/6/2019/02/click_ico.png) no-repeat;
+    z-index: 3;
+}
+
+.navTool .items h2 {
+    position: relative;
+    font-size: 11px;
+}
+
+.navTool .items .expand_purple {
+    background-position: 0 0;
+}
+
+.navTool .items .collapse_purple {
+    background-position: 0 -25px;
+}
+
+.navTool .items .expand_green {
+    background-position: 0 -50px;
+}
+
+.navTool .items .collapse_green {
+    background-position: 0 -75px;
+}
+
+.navTool .items .expand_blue {
+    background-position: 0 -100px;
+}
+
+.navTool .items .collapse_blue {
+    background-position: 0 -125px;
+}
+
+.navTool .items.item_2 {
+    color: #008170;
+    background: #dbeeeb;
+}
+
+.navTool .items.item_3 {
+    color: #0069aa;
+    background: #d9e6ed;
+}
+
+
+/*.navTool .items.item_3{ color:#0069aa; background:#d9e6ed; margin-bottom:10px;}*/
+
+
+/*.navTool .item_list.line{ border-bottom:1px solid #d9d9d9; padding-bottom:10px;}*/
+
+
+/*columns*/
+
+.navTool .sub_content {
+    display: none;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .navTool .sub_content {
+        left: -136px;
+    }
+    .navTool .items h2{
+        text-align: left;
+        text-indent: 78px;
+    }
+    .navTool .items a{
+        left: 20px;
+    }
+    .phases li.begin {
+        display: none;
+        background: url(../../../../uploads/sites/6/2019/02/phases_begin-mobile.html) no-repeat;
+        width: 143px;
+        height: 40px;
+        margin-left: 0;
+    }
+    .phases li.begins {
+        background: url(../../../../uploads/sites/6/2019/02/phases_begin-mobile.html) 24px center no-repeat;
+    }
+}
+
+.sub_content .space.columns {
+    width: 118px;
+    background: none;
+    border: none;
+}
+
+.columns {
+    float: left;
+    margin: 0 6px;
+    /*display:block;*/
+}
+
+.one.columns {
+    width: 148px;
+}
+
+.two.columns {
+    width: 308px;
+}
+
+.three.columns {
+    width: 468px;
+}
+
+.four.columns {
+    width: 628px;
+}
+
+.five.columns {
+    width: 788px;
+}
+
+.sub_content li {
+    background: #f3dff8;
+    color: #9654a6;
+    height: 48px;
+    border-bottom: 1px solid #c6c6c7;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+    *position: static;
+    cursor: pointer;
+    display: table;
+}
+
+.sub_content li.blank,
+.sub_content li.space {
+    cursor: default;
+}
+
+.sub_content li p {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    *display: inline;
+}
+
+.hover {
+    -webkit-box-shadow: 2px 2px 5px #c8c8c8;
+    -moz-box-shadow: 2px 2px 5px #c8c8c8;
+    box-shadow: 2px 2px 5px #c8c8c8;
+    background: #fff;
+    zoom: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=140, Color=#c8c8c8)";
+    filter: progid: DXImageTransform.Microsoft.Shadow(Strength=2, Direction=140, Color=#c8c8c8);
+}
+
+.sub_content .blank {
+    background: none!important;
+    border: none;
+}
+
+.sub_content.item_2_con li {
+    background: #dbeeeb;
+    color: #008170;
+}
+
+.sub_content.item_3_con li {
+    background: #d9e6ed;
+    color: #0069aa;
+}
+
+.sub_content.item_common_con li {
+    background: #fbeedc;
+    color: #663333;
+}
+
+
+/*nav bottom */
+
+.nav_bottom {
+    display: none;
+    width: 948px;
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f2f2f2');
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f2f2f2));
+    background: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+    margin-bottom: 20px;
+}
+
+.nav_bottom .content_bg {
+    padding-top: 0px;
+}
+
+
+/* pop*/
+
+.coverLayout {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter: alpha(opacity=30);
+    -moz-opacity: 0.3;
+    -khtml-opacity: 0.3;
+    opacity: 0.3;
+}
+
+.pop_box {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    right: -204px;
+    top: -160px;
+    width: 224px;
+    border: 1px solid #0069aa;
+    background: #fff;
+    color: #444;
+    text-align: left;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    box-shadow: 3px 5px 5px #bbb;
+}
+.pop_box em{
+    display: none;
+}
+@media (max-width: 767px) {
+
+    .sub_content li{
+        text-align: left;
+        text-indent: 10px;
+    }
+    .pop_box {
+        width: 90%;
+    }
+    .pop_box em{
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+        text-align: center;
+        font-size: 14px;
+        color: #05559c;
+        border: 1px #05559c solid;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: block;
+        font-style:normal;
+    }
+}
+
+.pop_box .arrow {
+    display: inline-block;
+    position: absolute;
+    background: url(../../../../uploads/sites/6/2019/02/arrow.png) no-repeat;
+    width: 9px;
+    height: 16px;
+    top: 48%;
+    left: -9px;
+}
+
+.pop_box .arrow_r {
+    display: inline-block;
+    position: absolute;
+    background: url(../../../../uploads/sites/6/2019/02/arrow_r.png) no-repeat;
+    width: 9px;
+    height: 16px;
+    top: 48%;
+    right: -9px;
+}
+
+.pop_box dl {
+    margin: 0;
+    padding: 10px;
+}
+
+.pop_box dl dt {
+    font: bold 11px Verdana, Geneva, sans-serif;
+    color: #0069aa;
+}
+
+.pop_box dl dt img {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.pop_box dl dt p {
+    padding-top: 18px;
+    padding-bottom: 10px;
+    cursor: default;
+    font-size: 15px;
+}
+
+.pop_box dl dd {
+    clear: both;
+    margin: 0;
+}
+
+.pop_box .pop_links {
+    background: #d9e6ed;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+
+.pop_box .pop_links a {
+    display: block;
+    padding: 7px 20px 9px;
+    background: #fff;
+    margin-bottom: 2px;
+    text-align: center;
+    border: 1px solid #e1ebf1;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    color: #0069aa;
+}
+
+
+/* make phase response by pretty at 2017/01/22*/
+#wrap-phases{
+    position: relative !important;
+    top: 0;
+    overflow: hidden;
+}
+
+#toggle-button {
+    display: none;
+    cursor: pointer;
+    width: 46px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    background-color: #fff;
+    box-shadow: -5px 0px 5px #e1e2e2;
+}
+
+#toggle-button.open {
+    background: #fff url('../../../../uploads/sites/6/2019/02/phase-open.jpg') center center no-repeat;
+}
+
+#toggle-button.close {
+    background: #fff url('../../../../uploads/sites/6/2019/02/phase-close.jpg') center center no-repeat;
+}
+
+@media (max-width: 948px) {
+    #toggle-button {
+        display: block;
+    }
+}
+
+.navTool .header {
+    width: 100%;
+}
+
+.navTool .header .header-content {
+    padding-top: 18px;
+    width: 100%;
+}
+
+.navTool .header .header-content .header-content__left {
+    width: 34.25%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media (max-width: 767px) {
+    .navTool .header .header-content .header-content__left {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .navTool .header .header-content .header-content__left {
+        width: 100%;
+        display: inherit;
+    }
+}
+
+.navTool .header .header-content .header-content__left img {
+    width: 100%;
+}
+
+.navTool .header .header-content .header-content__right {
+    width: 63%;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 40px;
+}
+
+@media (max-width: 767px) {
+    .navTool .header .header-content .header-content__left img {
+        width: auto;
+    }
+    .navTool .header .header-content .header-content__right {
+        width: 100%;
+        display: inherit;
+        padding: 20px 20px 0;
+        box-sizing: border-box;
+    }
+}
+
+.navTool .header .header-content .header-content__right .sub_text {
+    line-height: 22px;
+}
+
+.navTool .header .header-content .header-content__right .header-content__search {
+    padding-top: 25px;
+}
+
+.navTool .header .header-content .header-content__right .header-content__search input {
+    width: 78.24%;
+    height: 35px;
+    line-height: 35px;
+    border: 1px #ccc solid;
+    padding: 0 15px;
+    box-sizing: border-box;
+    font-family: "Whitney Book";
+    color: #939598;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.navTool .header .header-content .header-content__right .header-content__search button {
+    width: 76px;
+    height: 35px;
+    line-height: 35px;
+    background: #0069aa;
+    text-align: center;
+    color: white;
+    border: none;
+    font-family: 'Whitney Book';
+    font-size: 13px;
+}
+
+.navTool .header .header-content .header-content__right .header-content__switch-phone {
+    display: none;
+}
+
+.content__explore {
+    font-family: 'Whitney Medium';
+    font-size: 17px;
+    color: black;
+    line-height: 25px;
+    text-align: left;
+    border-bottom: 1px #ddd solid;
+    padding: 55px 0 14px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .pop_box .pop_links a{
+        text-align: left;
+    }
+    .navTool .header {
+        margin-bottom: 0;
+    }
+    .navTool .header .header-content .header-content__right .header-content__search input {
+        width: 70.24%;
+        padding: 0 10px;
+        appearance: none;
+        -webkit-appearance: none;
+        margin-right: 0;
+    }
+    .navTool .header .header-content .header-content__right .header-content__search button {
+        margin-left: 10px;
+    }
+    .navTool .header .header-content .header-content__right .header-content__switch-phone {
+        display: block;
+        font-size: 13px;
+        line-height: 150%;
+        text-align: center;
+        padding: 25px 0 0;
+    }
+    .content__explore {
+        padding: 25px 0 14px;
+        text-align: left;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+@media (max-width: 360px) {
+    .navTool .header .header-content .header-content__right .header-content__search button {
+        margin-left: 0;
+    }
+    .navTool .header .header-content .header-content__right .header-content__search input{
+        margin-right: 0;
+        width: 71.24%;
+    }
+}
+html body .catalent .main-content {
+    background-color: #fff;
+}
+
+.challenges-title {
+    padding: 43px 0 14px;
+    font-size: 17px;
+    color: black;
+    font-family: 'Whitney Medium';
+    border-bottom: 1px #ddd solid;
+    text-transform: uppercase;
+}
+
+.challenges-description p {
+    padding-top: 12px;
+    line-height: 22px;
+    color: black;
+    font-size: 13px;
+    font-family: 'Whitney Book';
+}
+
+.challenges-description__button {
+    width: 234px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    color: white;
+    background-color: #0069aa;
+    text-transform: uppercase;
+}
+
+.challenges-description__button a {
+    width: 100%;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Whitney Book';
+}
+
+.challenges-content {
+    max-width: 948px;
+    margin: 1.8% auto;
+    padding-top: 60px;
+    /*-moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    -moz-column-width: 20vw;
+    -webkit-column-width: 20vw;
+    column-width: 20vw;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;*/
+}
+/*.challenges-content .grid-sizer {
+    width: 15.16667%;
+}
+.challenges-content .gutter-sizer {
+    width: 1.8%;
+}*/
+/*.waterfull {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    -moz-column-width: 23em;
+    -webkit-column-width: 23em;
+    column-width: 23em;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+}*/
+.challenges-content__item {
+
+    padding: 16px 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    /*-moz-page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid;*/
+}
+.waterfull-column{
+    width: calc(100%/3 - 14px);
+    float: left;
+    margin-right: 20px;
+}
+.waterfull-column:last-child{
+    margin-right: 0;
+}
+.waterfull:after{
+    content: ' ';
+    display: block;
+    clear: both;
+}
+.content-mobile{
+    display: none;
+}
+.content-desktop{
+    display: block;
+}
+@media (max-width: 768px) {
+    .content-desktop{
+        padding: 0 30px;
+    }
+    .challenges-title {
+        margin: 10px 30px 14px
+    }
+    .challenges-description {
+        padding: 0 30px;
+    }
+    .content__explore{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .challenges-content__item{
+        padding: 0 10px 10px;
+    }
+}
+@media (max-width: 767px) {
+    .content-desktop{
+        display: none;
+    }
+    .content-mobile{
+        display: block;
+    }
+    .waterfull-column{
+        display: none;
+    }
+    .challenges-content {
+        margin: 2.25% 20px;
+    }
+    .waterfull {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+        -moz-column-width: 100%;
+        -webkit-column-width: 100%;
+        column-width: 100%;
+        -moz-column-gap: 0;
+        -webkit-column-gap: 0;
+        column-gap: 0;
+    }
+    .challenges-content__item{
+        padding: 0 10px 10px;
+    }
+
+    .challenges-content {
+        margin: 2.25% 0;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+    .challenges-content__item{
+        padding: 16px 20px;
+    }
+
+}
+
+.challenges-content__item.light-blue,
+.challenges-content__item.challenge-color-0 {
+    background-color: #93d7d5;
+}
+
+.challenges-content__item.deep-blue,
+.challenges-content__item.challenge-color-1 {
+    background-color: #a3c2e0;
+}
+
+.challenges-content__item.light-purple,
+.challenges-content__item.challenge-color-2 {
+    background-color: #c3c1dc;
+}
+
+.challenges-content__item a {
+    text-decoration: none;
+}
+
+.challenges-content__item a h1 {
+    padding: 0 13px 16px;
+    font-size: 15px;
+    line-height: 22px;
+    color: black;
+    margin: 0;
+    text-align: left;
+    font-family: 'Whitney Medium';
+}
+
+.challenges-content__item--content {
+    padding: 5px 15px;
+    background-color: white;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .challenges-content__item a h1 {
+        padding: 16px 10px;
+    }
+    .challenges-content__item--content {
+        padding: 5px 15px;
+        margin: 0 10px 10px;
+        background-color: white;
+    }
+}
+.challenges-content__item--content p{
+    font-family: 'Whitney Book';
+}
+.challenges-content__item--content p:first-child {
+    font-size: 13px;
+    color: black;
+    line-height: 22px;
+}
+
+.challenges-content__item--content p:last-child {
+    font-size: 13px;
+    color: black;
+    line-height: 22px;
+    text-decoration: underline;
+    margin-top: 24px;
+    padding-bottom: 50px;
+    font-family: 'Whitney Medium';
+}
+
+.cl {
+    overflow: hidden;
+}
+
+
+@media (max-width: 480px) {
+    .challenges-description__button {
+        width: 100%;
+    }
+    .challenges-content__item {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+    .challenges-content__item a h1 {
+        padding: 16px 10px;
+    }
+    .challenges-content__item--content {
+        padding: 10px;
+    }
+} 
+
+/* Factoid Page Styles */
+.factoid-slice {
+    color: #fff;
+    text-align: center;
+}
+.factoid-slide {
+    display: block;
+    height: 100%;
+    min-height: 1px;
+}
+.factoid-title {
+    display: block;
+    margin-bottom: 10px;
+}
+.factoid-text-img {
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.factoid-ico {
+    height: 70px;
+    line-height: 70px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.factoid-num {
+    font-size: 60px;
+    line-height: 1em;
+}
+.factoid-description {
+    margin-top: 0px;
+    margin:  auto;
+  text-align: center;
+}
+
+/* Home Page Widget Title Links */
+.et_pb_sidebar_0.et_pb_widget_area h4.widgettitle a {
+  font-size:19px!important;
+}
+.et_pb_sidebar_1.et_pb_widget_area h4.widgettitle a {
+  font-size:19px!important;
+}
+.et_pb_sidebar_2.et_pb_widget_area h4.widgettitle a {
+  font-size:19px!important;
+}
+/* Other Pagination Links */
+.pagination .alignleft a {
+  color: rgba(255,255,255,0);
+  position: relative;
+}
+.pagination .alignleft a:after {
+  content: "« More Results";
+  position: absolute;
+  text-align: left;
+  width: 200px;
+  left: 0;
+  color: #016ba9;
+}
+.pagination .alignright a {
+  color: rgba(255,255,255,0);
+  position: relative;
+}
+.pagination .alignright a:after {
+  content: "Previous Results »";
+  position: absolute;
+  text-align: right;
+  width: 200px;
+  right: 0;
+  color: #016ba9;
+}
+/* News Section Pagination Links */
+.news-links .pagination .alignleft a {
+  color: rgba(255,255,255,0);
+  position: relative;
+}
+.news-links .pagination .alignleft a:after {
+  content: "« Older News Articles";
+  position: absolute;
+  text-align: left;
+  width: 200px;
+  left: 0;
+  color: #016ba9;
+}
+.news-links .pagination .alignright a {
+  color: rgba(255,255,255,0);
+  position: relative;
+}
+.news-links .pagination .alignright a:after {
+  content: "Newer News Articles »";
+  position: absolute;
+  text-align: right;
+  width: 200px;
+  right: 0;
+  color: #016ba9;
+}
+
+/* Events Section Pagination Links */
+.events-links .pagination .alignleft a {
+  color: rgba(255,255,255,0);
+  position: relative;
+}
+.events-links .pagination .alignleft a:after {
+  content: "« More Events";
+  position: absolute;
+  text-align: left;
+  width: 200px;
+  left: 0;
+  color: #016ba9;
+}
+.events-links .pagination .alignright a {
+  color: rgba(255,255,255,0);
+  position: relative;
+}
+.events-links .pagination .alignright a:after {
+  content: "Previous Events »";
+  position: absolute;
+  text-align: right;
+  width: 200px;
+  right: 0;
+  color: #016ba9;
+}
+/* Corporate Responsibility Table Fixes */
+#footable_221139, #footable_221139 tbody {
+    margin-bottom: 0px!important;
+}
+
+#footable_221168, #footable_221168 tbody {
+    margin-bottom: 0px!important;
+}
+
+#footable_221189, #footable_221189 tbody {
+    margin-bottom: 0px!important;
+}
+
+/* Science and Art Accessibility Box Font Sizes */
+.scienceandart .box-title {
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 28px!important;
+    font-size: 24px!important;
+    margin-bottom: 10px;
+}
+.scienceandart .box-description {
+    font-weight: 500!important;
+  color: #261c02!important;
+    line-height: 25px!important;
+    font-size: 18px!important;
+}
+.scienceandart .box-cta {
+    font-weight: 700;
+  line-height: 25px!important;
+    font-size: 18px!important;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-top: 25px!important;
+}

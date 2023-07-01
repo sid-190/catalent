@@ -1,0 +1,399 @@
+.mugo_catalent_hero_banner .slider .slick .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    overflow: hidden;
+}
+
+.mugo_catalent_hero_banner .slider .controlls {
+    position: absolute;
+    display: flex;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.mugo_catalent_hero_banner .slider .autoplay {
+    margin-right: 1rem;
+}
+
+.mugo_catalent_hero_banner .slider .autoplay .pause,
+.mugo_catalent_hero_banner .slider .autoplay .play {
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    background: white;
+    border: 1px solid #00599F;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mugo_catalent_hero_banner .slider .dots {
+    display: flex;
+    align-items: center;
+    height: 32px;
+}
+
+.mugo_catalent_hero_banner .slider .dots button {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #00599F;
+    margin: 3px;
+    cursor: pointer;
+    border-radius: 50%;
+
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+.mugo_catalent_hero_banner .slider .dots button.active {
+    background: #666;
+}
+
+.mugo_catalent_hero_banner .slider .prev,
+.mugo_catalent_hero_banner .slider .next {
+    position: absolute;
+    top: 50%;
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    background: white;
+    border: 1px solid white;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #016ba9;
+}
+
+.mugo_catalent_hero_banner .slider .prev {
+    left: 0;
+}
+
+.mugo_catalent_hero_banner .slider .next {
+    right: 0;
+}
+
+.mugo_catalent_hero_banner .slider .et_pb_module_inner {
+    width: 100%;
+    height: 100%;
+}
+
+/**
+ * Slider Section
+ */
+.mugo_catalent_hero_banner .slider-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+@media (min-width: 680px) {
+    .mugo_catalent_hero_banner .slider-item {
+        min-height: 420px;
+    }
+}
+
+.mugo_catalent_hero_banner .slider-item.no-image .image-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.mugo_catalent_hero_banner .slider-item .overlay-box {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.mugo_catalent_hero_banner .slider-item.has-image .image-box {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 56.25%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.mugo_catalent_hero_banner .slider-item.has-image .image-box.image-box--full-width {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+.mugo_catalent_hero_banner .slider-item.has-image .image-box.image-box--full-width.image-align--left {
+    background-position: center left;
+}
+.mugo_catalent_hero_banner .slider-item.has-image .image-box.image-box--full-width.image-align--center {
+    background-position: center center;
+}
+.mugo_catalent_hero_banner .slider-item.has-image .image-box.image-box--full-width.image-align--right {
+    background-position: center right;
+}
+
+.mugo_catalent_hero_banner .slider-item .content-box {
+    min-width: 80%;
+    height: 100%;
+    max-width: 490px;
+    flex-direction: column;
+    padding: 30px 0;
+    z-index: 1;
+}
+
+.mugo_catalent_hero_banner .slider-item.no-image .content-box {
+    padding: 32px 0 64px;
+    margin: 0 10%;
+}
+
+
+@media (max-width: 767px) {
+
+    .mugo_catalent_hero_banner .slider-item {
+        min-height: 540px;
+    }
+
+    .mugo_catalent_hero_banner .slider-item .content-box {
+        padding-left: 52px !important;
+        padding-right: 52px !important;
+    }
+
+    .mugo_catalent_hero_banner .slider-item.mobile-text--bottom .content-box {
+        order: 1;
+        padding: 32px 0 76px;
+    }
+    .mugo_catalent_hero_banner .slider-item.mobile-text--top .content-box {
+        order: -1;
+        padding: 32px 0 32px;
+    }
+
+    .mugo_catalent_hero_banner .slider-item.has-image .image-box {
+        width: 100%;
+        margin: 0;
+        padding-top: initial;
+        flex: 1 1 auto;
+    }
+
+    .mugo_catalent_hero_banner .slider-item.mobile-text--center.has-image .image-box {
+        position: absolute;
+        z-index: 0;
+        padding: 0;
+        height: 100%;
+        opacity: 0.25;
+    }
+    .mugo_catalent_hero_banner .slider-item.mobile-text--center .content-box {
+        padding: 32px 0 64px;
+        z-index: 1;
+    }
+
+}
+
+/** Desktop Styles */
+@media (min-width: 768px) {
+
+    .mugo_catalent_hero_banner .slider-item {
+        flex-direction: row;
+        background: blue;
+    }
+
+    .mugo_catalent_hero_banner .slider-item {
+        background: red;
+    }
+
+    .mugo_catalent_hero_banner .slider-item.has-image .image-box.image-box--full-width {
+        width: 100%;
+        margin-left: 0;
+        position: absolute;
+        z-index: 0;
+        height: 100%;
+        left: 0;
+        top: 0;
+        padding: 0;
+    }
+
+    .mugo_catalent_hero_banner .slider-item.desktop-text--left .content-box {
+        text-align: left;
+    }
+
+    .mugo_catalent_hero_banner .slider-item.desktop-text--center .content-box {
+        text-align: center;
+    }
+
+    .mugo_catalent_hero_banner .slider-item.desktop-text--right .content-box {
+        text-align: right;
+    }
+
+    .mugo_catalent_hero_banner .slider-item.has-image.full-image.desktop-text--left .content-box,
+    .mugo_catalent_hero_banner .slider-item.no-image.desktop-text--left .content-box {
+        min-width: unset;
+        max-width: 1080px;
+        width: 80%;
+        z-index: 1;
+        padding: 50px 40% 60px 0;
+    }
+
+    .mugo_catalent_hero_banner .slider-item.has-image.full-image.desktop-text--center .content-box,
+    .mugo_catalent_hero_banner .slider-item.no-image.desktop-text--center .content-box {
+        min-width: unset;
+        max-width: 1080px;
+        width: 80%;
+        z-index: 1;
+        padding: 50px 20% 60px 20%;
+    }
+
+    .mugo_catalent_hero_banner .slider-item.has-image.full-image.desktop-text--right .content-box,
+    .mugo_catalent_hero_banner .slider-item.no-image.desktop-text--right .content-box {
+        min-width: unset;
+        max-width: 1080px;
+        width: 80%;
+        z-index: 1;
+        padding: 50px 0 60px 40%;
+    }
+
+    .mugo_catalent_hero_banner .slider-item.has-image .image-box.image-box--container {
+        min-width: unset;
+        width: calc(50% - 30px);
+        max-width: 510px;
+        min-height: 420px;
+        height: 100%;
+        max-height: unset;
+        display: block;
+        padding: 0;
+        margin: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .mugo_catalent_hero_banner .slider-item.has-image.side-image .content-box {
+        max-width: 540px;
+        width: 50%;
+        min-width: unset;
+    }
+
+    .mugo_catalent_hero_banner .slider-item.has-image.side-image.desktop-text--right .content-box {
+        order: 1;
+        margin: 0 10% 0 30px;
+    }
+    .mugo_catalent_hero_banner .slider-item.has-image.side-image.desktop-text--left .content-box,
+    .mugo_catalent_hero_banner .slider-item.has-image.side-image.desktop-text--center .content-box {
+        order: -1;
+        margin: 0 30px 0 10%;
+    }
+
+    .mugo_catalent_hero_banner .slider-item.has-image.side-image.desktop-text--right .image-box.image-box--container {
+        order: 0;
+        margin-left: 10%;
+    }
+    .mugo_catalent_hero_banner .slider-item.has-image.side-image.desktop-text--left .image-box.image-box--container,
+    .mugo_catalent_hero_banner .slider-item.has-image.side-image.desktop-text--center .image-box.image-box--container {
+        order: 0;
+        margin-right: 10%;
+    }
+
+}
+
+@media (min-width: 1080px) {
+    .mugo_catalent_hero_banner .slider-item.has-image.full-image.desktop-text--left .content-box,
+    .mugo_catalent_hero_banner .slider-item.no-image.desktop-text--left .content-box {
+        padding: 50px 470px 60px 0;
+    }
+
+    .mugo_catalent_hero_banner .slider-item.has-image.full-image.desktop-text--right .content-box,
+    .mugo_catalent_hero_banner .slider-item.no-image.desktop-text--right .content-box {
+        padding: 50px 0 60px  470px;
+    }
+}
+
+.mugo_catalent_hero_banner .slider-item .content-box .content-box__title {
+    font-weight: 700;
+}
+.mugo_catalent_hero_banner .slider-item .content-box .content-box__title.title--small {
+    font-size: 20px;
+}
+.mugo_catalent_hero_banner .slider-item .content-box .content-box__title.title--medium {
+    font-size: 26px;
+}
+.mugo_catalent_hero_banner .slider-item .content-box .content-box__title.title--large {
+    font-size: 32px;
+}
+
+.mugo_catalent_hero_banner .slider-item .content-box .content-box__description {
+    font-weight: 400;
+}
+.mugo_catalent_hero_banner .slider-item .content-box .content-box__description.description--small {
+    font-size: 16px;
+}
+.mugo_catalent_hero_banner .slider-item .content-box .content-box__description.description--medium {
+    font-size: 22px;
+}
+.mugo_catalent_hero_banner .slider-item .content-box .content-box__description.description--large {
+    font-size: 28px;
+}
+
+.mugo_catalent_hero_banner .slider-item .content-box .content-box__cta {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    border: 2px solid #0069A9;
+    color: #ffffff;
+    background: #0069A9;
+    border-radius: 3px;
+    padding: 11px 8px 9px 22px;
+    display: inline-flex;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+.mugo_catalent_hero_banner .slider-item .content-box .content-box__cta:after {
+    content: "";
+    font-family: "catalent-functions" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+    opacity: 0;
+    height: 20px;
+    margin-left: -6px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+.mugo_catalent_hero_banner .slider-item .content-box .content-box__cta:hover {
+    border-radius: 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    padding: 11px 4px 9px 16px;
+}
+.mugo_catalent_hero_banner .slider-item .content-box .content-box__cta:hover:after {
+    opacity: 1;
+    margin-left: 4px;
+}
+
+.using-keyboard .mugo_catalent_hero_banner .mugo_catalent_slider_item:focus .slider-item,
+.using-keyboard .mugo_catalent_hero_banner .mugo_catalent_slider_item:focus .slider-item .image-box--full-width,
+.using-keyboard .mugo_catalent_hero_banner .mugo_catalent_slider_item:focus .slider-item .overlay-box {
+    box-shadow: inset 0 0 0 4px #0069A9, inset 0 0 0 8px #FFFFFF;
+    transition: box-shadow 0.3s ease-in-out;
+    -webkit-transition: box-shadow 0.3s ease-in-out;
+}
+.using-keyboard .mugo_catalent_hero_banner .mugo_catalent_slider_item .slider-item:focus,
+.using-keyboard .mugo_catalent_hero_banner .mugo_catalent_slider_item .slider-item:focus .image-box--full-width,
+.using-keyboard .mugo_catalent_hero_banner .mugo_catalent_slider_item .slider-item:focus .overlay-box {
+    box-shadow: inset 0 0 0 4px #0069A9, inset 0 0 0 8px #FFFFFF !important;
+    transition: box-shadow 0.3s ease-in-out;
+    -webkit-transition: box-shadow 0.3s ease-in-out;
+}

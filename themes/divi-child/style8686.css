@@ -1,0 +1,11 @@
+/*
+    Theme Name:     Divi Child
+    Theme URI:      https://catalent.com/
+    Description:    Child theme for Divi in multisite WordPress instance.
+    Template:       Divi
+    Version:        1.0.0
+*/
+
+.search-results-status {
+    margin-bottom: 2em;
+}

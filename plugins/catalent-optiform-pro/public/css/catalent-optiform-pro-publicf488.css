@@ -1,0 +1,1588 @@
+@media print {
+  html body {
+    margin: 0;
+    padding: 0;
+  }
+  html body .message-bar,
+  html body .sidebar,
+  html body .navbar-mobile,
+  html body .navbar,
+  html body .footer {
+    display: none !important;
+  }
+}
+html body .catalent .overlay {
+  display: none;
+}
+html body .catalent #overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 220px 10% 0 10%;
+  background: rgba(0,0,0,0.7);
+  z-index: 100000;
+}
+html body .catalent #overlay .popupcontent {
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+html body .catalent #overlay .popup_blue_title {
+  font-size: 18px;
+  width: auto;
+  display: inherit;
+  color: #0168aa;
+  margin-bottom: 5px;
+}
+html body .catalent #overlay .popupclose {
+  float: right;
+  cursor: pointer;
+  color: #0168aa;
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+  top: 20px;
+  right: 20px;
+}
+@media screen and (max-width: 767px) {
+  html body .catalent #overlay {
+    padding-top: 110px;
+  }
+}
+html body .catalent .main-content .solutionfinder {
+  box-sizing: border-box;
+  font-size: 13px;
+  color: #000;
+}
+html body .catalent .main-content .solutionfinder.article {
+  padding-bottom: 0;
+}
+html body .catalent .main-content .solutionfinder.article .first-block {
+  margin-bottom: 0;
+}
+@font-face {
+  font-family: 'Whitney-Medium';
+  src: url("../fonts/Whitney-Medium.eot");
+  src: url("../fonts/Whitney-Mediumd41d.eot?#iefix") format('embedded-opentype'), url("../fonts/Whitney-Medium.woff") format('woff'), url("../fonts/Whitney-Medium.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Whitney-Light';
+  src: url("../fonts/Whitney-Light.eot");
+  src: url("../fonts/Whitney-Lightd41d.eot?#iefix") format('embedded-opentype'), url("../fonts/Whitney-Light.woff") format('woff'), url("../fonts/Whitney-Light.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Whitney-Book';
+  src: url("../fonts/Whitney-Book.eot");
+  src: url("../fonts/Whitney-Bookd41d.eot?#iefix") format('embedded-opentype'), url("../fonts/Whitney-Book.woff") format('woff'), url("../fonts/Whitney-Book.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Whitney-Bold';
+  src: url("../fonts/Whitney-Bold.eot");
+  src: url("../fonts/Whitney-Boldd41d.eot?#iefix") format('embedded-opentype'), url("../fonts/Whitney-Bold.woff") format('woff'), url("../fonts/Whitney-Bold.ttf") format('truetype');
+}
+html body .catalent .main-content .solutionfinder .step {
+  max-width: 940px;
+  margin: 0px auto;
+}
+html body .catalent .main-content .solutionfinder .container {
+  margin-left: 60px !important;
+  margin-right: 60px !important;
+  width: unset !important;
+}
+html body .catalent .main-content .solutionfinder .small_screen_only {
+  display: none;
+}
+html body .catalent .main-content .solutionfinder .only_tablet {
+  display: none;
+}
+html body .catalent .main-content .solutionfinder .only_smartphone {
+  display: none;
+}
+html body .catalent .main-content .solutionfinder .not_desktop {
+  display: none;
+}
+html body .catalent .main-content .solutionfinder .only_desktop {
+  display: block;
+}
+html body .catalent .main-content .solutionfinder .clearfix {
+  clear: both;
+}
+html body .catalent .main-content .solutionfinder .v-bottom {
+  vertical-align: bottom;
+  display: inline-block;
+  box-sizing: border-box;
+}
+html body .catalent .main-content .solutionfinder .v-top {
+  vertical-align: top;
+  display: inline-block;
+  box-sizing: border-box;
+}
+html body .catalent .main-content .solutionfinder .v-middle {
+  vertical-align: middle;
+  display: inline-block;
+  box-sizing: border-box;
+}
+html body .catalent .main-content .solutionfinder a {
+  color: #000;
+}
+html body .catalent .main-content .solutionfinder a.download,
+html body .catalent .main-content .solutionfinder a.download:hover {
+  color: #0069AA;
+  text-decoration: underline;
+}
+html body .catalent .main-content .solutionfinder .header_section {
+  background-color: #fff;
+  font-size: 0;
+}
+html body .catalent .main-content .solutionfinder .header_section hr {
+  margin-bottom: 40px;
+  background: #ccc;
+}
+html body .catalent .main-content .solutionfinder .header_section .header_left {
+  width: 60%;
+  text-align: left;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+html body .catalent .main-content .solutionfinder .header_section .header_right {
+  width: 40%;
+  text-align: right;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+html body .catalent .main-content .solutionfinder .header_section .header_text {
+  color: #0069aa;
+  font-size: 28px;
+  line-height: 33px;
+}
+html body .catalent .main-content .solutionfinder .header_section .header_logo {
+  width: 49px;
+  height: 49px;
+  margin-right: 10px;
+}
+html body .catalent .main-content .solutionfinder .header_section .progress {
+  color: #0069aa;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 3px;
+}
+html body .catalent .main-content .solutionfinder .header_section .progress_complete {
+  font-size: 11px;
+  color: #0069aa;
+  line-height: 20px;
+  font-weight: 500;
+}
+html body .catalent .main-content .solutionfinder .text-center {
+  text-align: center !important;
+}
+html body .catalent .main-content .solutionfinder .bold {
+  font-weight: 600;
+}
+html body .catalent .main-content .solutionfinder .blocked {
+  display: inline-block;
+}
+html body .catalent .main-content .solutionfinder .margin_bottom_20 {
+  margin-bottom: 20px;
+}
+html body .catalent .main-content .solutionfinder .margin_top_20 {
+  margin-top: 20px;
+}
+html body .catalent .main-content .solutionfinder .margin_bottom_21_tablet_desktop {
+  margin-bottom: 21px;
+  display: block;
+}
+html body .catalent .main-content .solutionfinder .margin_bottom_20_smartphone {
+  margin-bottom: 20px;
+  display: none;
+}
+html body .catalent .main-content .solutionfinder .margin_top_30 {
+  margin-top: 30px;
+}
+html body .catalent .main-content .solutionfinder .margin_bottom_30 {
+  margin-bottom: 30px;
+}
+html body .catalent .main-content .solutionfinder .margin_bottom_25 {
+  margin-bottom: 25px;
+}
+html body .catalent .main-content .solutionfinder .margin_top_35_smartphone {
+  margin-top: 35px;
+  display: none;
+}
+html body .catalent .main-content .solutionfinder .margin_top_40_tablet_desktop {
+  margin-top: 40px;
+}
+html body .catalent .main-content .solutionfinder .margin_bottom_40_smartphone {
+  margin-bottom: 40px;
+  display: none;
+}
+html body .catalent .main-content .solutionfinder .margin_bottom_30_tablet_desktop {
+  margin-bottom: 30px;
+  display: block;
+}
+html body .catalent .main-content .solutionfinder .margin_bottom_40 {
+  margin-bottom: 40px;
+}
+html body .catalent .main-content .solutionfinder .margin_20 {
+  margin: 20px 0;
+}
+html body .catalent .main-content .solutionfinder .clear {
+  clear: both;
+}
+html body .catalent .main-content .solutionfinder .blue_title {
+  font-size: 16px;
+  color: #0069aa;
+  line-height: 24px;
+  display: block;
+  margin-bottom: 20px;
+}
+html body .catalent .main-content .solutionfinder .subtitle {
+  color: #000;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+html body .catalent .main-content .solutionfinder .asterix {
+  font-size: 13px;
+  color: #0069aa;
+  display: inline-block;
+}
+html body .catalent .main-content .solutionfinder .normal_text {
+  font-size: 13px;
+  line-height: 22px;
+  color: #000;
+}
+html body .catalent .main-content .solutionfinder .footnote {
+  margin-top: 45px;
+  font-size: 11px;
+}
+html body .catalent .main-content .solutionfinder .Whitney-Medium {
+  font-weight: 500;
+}
+html body .catalent .main-content .solutionfinder .answer-box {
+  display: inline-block;
+  vertical-align: middle;
+  width: 61%;
+}
+html body .catalent .main-content .solutionfinder .answer-box .choices-row {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+html body .catalent .main-content .solutionfinder .answer-box .choice {
+  list-style: none;
+  float: left;
+  border: 1px solid #5b3b8e;
+  text-align: center;
+  color: #5b3b8e;
+  text-decoration: none;
+  cursor: pointer;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  background: #fff;
+}
+html body .catalent .main-content .solutionfinder .answer-box .choice .choice-inner {
+  padding: 10px 0;
+  font-size: 12px;
+  line-height: 14px;
+  border: 1px solid #fff;
+  font-weight: 500;
+}
+html body .catalent .main-content .solutionfinder .answer-box .choice:hover .choice-inner {
+  border-color: #5b3b8e;
+  display: block;
+}
+html body .catalent .main-content .solutionfinder .answer-box .choice.selected {
+  background: #5b3b8e;
+  color: #fff;
+}
+html body .catalent .main-content .solutionfinder .answer-box .choice.selected .choice-inner {
+  border-color: #5b3b8e;
+}
+html body .catalent .main-content .solutionfinder .answer-box .split24 {
+  width: 120px;
+  margin-left: 5px;
+}
+html body .catalent .main-content .solutionfinder .answer-box .split23,
+html body .catalent .main-content .solutionfinder .answer-box .split33 {
+  width: 120px;
+  margin-left: 5px;
+}
+html body .catalent .main-content .solutionfinder .answer-box .split1-2third {
+  width: 245px;
+  margin-left: 5px;
+}
+html body .catalent .main-content .solutionfinder .answer-box .split24.new_row,
+html body .catalent .main-content .solutionfinder .answer-box .split23.new_row,
+html body .catalent .main-content .solutionfinder .answer-box .split33.new_row,
+html body .catalent .main-content .solutionfinder .answer-box .split1-2third.new_row {
+  margin-left: 0;
+  clear: left;
+}
+html body .catalent .main-content .solutionfinder .question-container {
+  font-size: 0;
+}
+html body .catalent .main-content .solutionfinder .item-name-container {
+  width: 39%;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+}
+html body .catalent .main-content .solutionfinder .item-name-container .item-name {
+  padding-right: 20px;
+  position: relative;
+}
+html body .catalent .main-content .solutionfinder .nav-button {
+  display: inline-block;
+  margin-top: 13px;
+  padding: 0px 30px;
+  color: #0069aa;
+  background-color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+  padding-bottom: 5px;
+  border-bottom: solid #0069aa 1px;
+}
+html body .catalent .main-content .solutionfinder .back-arrow {
+  margin: 0s;
+  padding: 0 3px 0 0;
+  border: none;
+}
+html body .catalent .main-content .solutionfinder .nav-button-row {
+  margin: 0 auto;
+  white-space: nowrap;
+  padding-bottom: 20px;
+}
+html body .catalent .main-content .solutionfinder .left-buttons {
+  display: inline-block;
+  width: 25%;
+  box-sizing: border-box;
+}
+html body .catalent .main-content .solutionfinder .right-buttons {
+  text-align: right;
+  display: inline-block;
+  width: 75%;
+  box-sizing: border-box;
+}
+html body .catalent .main-content .solutionfinder .left-buttons {
+  text-align: left;
+}
+html body .catalent .main-content .solutionfinder .next-button {
+  margin-right: 0;
+}
+html body .catalent .main-content .solutionfinder #result_button_short {
+  display: none;
+}
+html body .catalent .main-content .solutionfinder .main_blue_button.contact_us_button {
+  width: unset !important;
+}
+html body .catalent .main-content .solutionfinder .main_blue_button {
+  color: #ffffff;
+  line-height: 1em;
+  font-size: 1.6em !important;
+  border-radius: 0px;
+  background-color: #0069aa;
+  padding: 15px 50px !important;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  border: 2px solid #ffffff !important;
+  transition: all 300ms ease 0ms;
+}
+html body .catalent .main-content .solutionfinder .main_blue_button:hover {
+  text-decoration: none;
+  border: 2px solid #0069aa !important;
+  transition: all 300ms ease 0ms;
+}
+html body .catalent .main-content .solutionfinder .main_blue_button::after {
+  content:"";
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  opacity: 0;
+  margin-right: 20px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  transition: all 200ms ease 0ms;
+}
+html body .catalent .main-content .solutionfinder .main_blue_button:hover:after {
+  opacity: 1;
+  right: 0;
+  transition: all 200ms ease 0ms;
+}
+html body .catalent .main-content .solutionfinder .nav_blue_button {
+  margin: 0 auto;
+  display: inline-block;
+  background-color: #0069aa;
+  border: none;
+  color: #fff;
+  padding: 0px 40px;
+  text-decoration: none;
+  font-size: 13px;
+  cursor: pointer;
+  min-width: 158px;
+  line-height: 36px;
+  box-sizing: border-box;
+  font-weight: 500;
+  position: relative;
+  border: 2px solid #ffffff !important;
+  transition: all 300ms ease 0ms;
+}
+html body .catalent .main-content .solutionfinder .nav_blue_button:hover {
+  border: 2px solid #0069aa !important;
+  transition: all 300ms ease 0ms;
+  text-decoration: none;
+}
+html body .catalent .main-content .solutionfinder .nav_blue_button::after {
+  content:"";
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  opacity: 0;
+  margin-right: 20px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  transition: all 200ms ease 0ms;
+}
+html body .catalent .main-content .solutionfinder .nav_blue_button:hover:after {
+  opacity: 1;
+  right: 0;
+  transition: all 200ms ease 0ms;
+}
+.catalent #result_button_short,
+.catalent #result_button_long{
+  display: none;
+}
+html body .catalent .main-content .solutionfinder .back-button,
+html body .catalent .main-content .solutionfinder .reset {
+  padding-left: 0px;
+  margin-left: 0px;
+  width: auto;
+}
+html body .catalent .main-content .solutionfinder .back-button {
+  padding-right: 0px;
+  margin-right: 0px;
+}
+html body .catalent .main-content .solutionfinder .reset {
+  margin-right: 40px;
+  padding-right: 0px;
+}
+html body .catalent .main-content .solutionfinder #page2 .tooltip_icon,
+html body .catalent .main-content .solutionfinder #page3 .tooltip_icon {
+  display: none;
+}
+html body .catalent .main-content .solutionfinder .tooltip_icon {
+  height: 16px;
+  width: 16px;
+  margin-left: 4px;
+}
+html body .catalent .main-content .solutionfinder .tooltip {
+  position: relative;
+  display: inline-block;
+}
+html body .catalent .main-content .solutionfinder .tooltip .tooltip_text {
+  visibility: hidden;
+  width: 250px;
+  background-color: #f6f6f6;
+  color: #000;
+  text-align: left;
+  border-radius: 6px;
+  padding: 20px;
+  position: absolute;
+  z-index: 1;
+  top: -21px;
+  left: 30px;
+  border: solid #d2d3d5 2px;
+}
+html body .catalent .main-content .solutionfinder .tooltip .tooltip_text::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: -20px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #d2d3d5 transparent transparent;
+}
+html body .catalent .main-content .solutionfinder .tooltip:hover .tooltip_text {
+  visibility: visible;
+}
+html body .catalent .main-content .solutionfinder .info {
+  height: 15px;
+  width: 15px;
+  margin-left: 4px;
+  display: none;
+}
+html body .catalent .main-content .solutionfinder .skip {
+  display: block;
+}
+html body .catalent .main-content .solutionfinder .warning-reference {
+  font-size: 12px;
+  color: #666;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+html body .catalent .main-content .solutionfinder .warning-reference-no-top-margin {
+  font-size: 12px;
+  color: #666;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+html body .catalent .main-content .solutionfinder hr {
+  border: 0px;
+  background: #efefef;
+  height: 1px;
+}
+html body .catalent .main-content .solutionfinder .blue_background {
+  background-color: #f7f8fa;
+}
+html body .catalent .main-content .solutionfinder .final_separator {
+  margin: 0 auto 0 auto;
+}
+@media screen and (max-width: 767px) {
+  html body .catalent .main-content .solutionfinder .not_small_screen {
+    display: none;
+  }
+  html body .catalent .main-content .solutionfinder .small_screen_only {
+    display: block;
+  }
+  html body .catalent .main-content .solutionfinder .only_tablet {
+    display: none;
+  }
+  html body .catalent .main-content .solutionfinder .not_desktop {
+    display: block;
+  }
+  html body .catalent .main-content .solutionfinder .only_smartphone {
+    display: block;
+  }
+  html body .catalent .main-content .solutionfinder .only_desktop {
+    display: none;
+  }
+  html body .catalent .main-content .solutionfinder .margin_bottom_10_smartphone {
+    margin-bottom: 10px;
+  }
+  html body .catalent .main-content .solutionfinder .margin_top_20_smartphone {
+    margin-top: 20px;
+  }
+  html body .catalent .main-content .solutionfinder .margin_top_35_smartphone {
+    margin-top: 35px;
+    display: block;
+  }
+  html body .catalent .main-content .solutionfinder .margin_top_40_tablet_desktop {
+    margin-top: 40px;
+    display: none;
+  }
+  html body .catalent .main-content .solutionfinder .margin_bottom_21_tablet_desktop {
+    margin-bottom: 21px;
+    display: none;
+  }
+  html body .catalent .main-content .solutionfinder .margin_bottom_20_smartphone {
+    margin-bottom: 20px;
+    display: block;
+  }
+  html body .catalent .main-content .solutionfinder .margin_bottom_30_tablet_desktop {
+    margin-bottom: 30px;
+    display: none;
+  }
+  html body .catalent .main-content .solutionfinder .margin_bottom_40_smartphone {
+    margin-bottom: 40px;
+    display: block;
+  }
+  html body .catalent .main-content .solutionfinder .margin_bottom_30_tablet_desktop {
+    margin-bottom: 30px;
+    display: none;
+  }
+  html body .catalent .main-content .solutionfinder .margin_bottom_40_smartphone {
+    margin-bottom: 40px;
+  }
+  html body .catalent .main-content .solutionfinder .margin_top_40_smartphone {
+    margin-top: 40px;
+  }
+  html body .catalent .main-content .solutionfinder .step {
+    margin: 0px auto;
+    width: auto;
+  }
+  html body .catalent .main-content .solutionfinder .container {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  html body .catalent .main-content .solutionfinder .header_section {
+    background-color: #f6f6f6;
+  }
+  html body .catalent .main-content .solutionfinder .header_section .header_text {
+    font-size: 20px;
+  }
+  html body .catalent .main-content .solutionfinder .header_section .progress {
+    font-size: 18px;
+    color: #0069aa;
+  }
+  html body .catalent .main-content .solutionfinder .header_section .progress_complete {
+    font-size: 9px;
+    color: #0069aa;
+    line-height: 20px;
+  }
+  html body .catalent .main-content .solutionfinder .header_section .header_logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+  }
+  html body .catalent .main-content .solutionfinder .header_section .header_right,
+  html body .catalent .main-content .solutionfinder .header_section .header_left {
+    padding: 15px 10px;
+    margin-bottom: 0;
+  }
+  html body .catalent .main-content .solutionfinder .answer-box {
+    position: static;
+    display: inline-block;
+    right: 0%;
+    width: 100%;
+  }
+  html body .catalent .main-content .solutionfinder .answer-box .choices-row {
+    width: 100%;
+    float: none;
+  }
+  html body .catalent .main-content .solutionfinder .answer-box .choice {
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+  }
+  html body .catalent .main-content .solutionfinder .answer-box .split23,
+  html body .catalent .main-content .solutionfinder .answer-box .split24 {
+    width: 49.5%;
+    margin-left: 1%;
+  }
+  html body .catalent .main-content .solutionfinder .answer-box .split33 {
+    width: 32.3%;
+    margin-left: 1%;
+  }
+  html body .catalent .main-content .solutionfinder .answer-box .split1-2third {
+    width: 100%;
+  }
+  html body .catalent .main-content .solutionfinder .answer-box .split24.new_row,
+  html body .catalent .main-content .solutionfinder .answer-box .split23.new_row,
+  html body .catalent .main-content .solutionfinder .answer-box .split33.new_row,
+  html body .catalent .main-content .solutionfinder .answer-box .split1-2third.new_row {
+    margin-left: 1%;
+    clear: none;
+  }
+  html body .catalent .main-content .solutionfinder .answer-box .split24.mobile_new_row,
+  html body .catalent .main-content .solutionfinder .answer-box .split23.mobile_new_row,
+  html body .catalent .main-content .solutionfinder .answer-box .split33.mobile_new_row,
+  html body .catalent .main-content .solutionfinder .answer-box .split1-2third.mobile_new_row {
+    margin-left: 0;
+  }
+  html body .catalent .main-content .solutionfinder .tooltip {
+    position: static;
+  }
+  html body .catalent .main-content .solutionfinder .tooltip .tooltip_text {
+    visibility: hidden;
+    width: 100%;
+    background-color: #f6f6f6;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 27px;
+    left: -1px;
+    box-sizing: border-box;
+  }
+  html body .catalent .main-content .solutionfinder .tooltip .tooltip_text::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 13px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #d2d3d5 transparent;
+  }
+  html body .catalent .main-content .solutionfinder .item-name {
+    width: 100%;
+    display: block;
+    padding-bottom: 10px;
+  }
+  html body .catalent .main-content .solutionfinder .item-name-container {
+    width: 100%;
+    display: block;
+  }
+  html body .catalent .main-content .solutionfinder .nav-button {
+    margin: 10px 1%;
+    padding: 5px 10px 0px 10px;
+    float: none;
+  }
+  html body .catalent .main-content .solutionfinder .back-button,
+  html body .catalent .main-content .solutionfinder .reset {
+    padding-left: 0px;
+    margin-left: 0px;
+    width: auto;
+  }
+  html body .catalent .main-content .solutionfinder .back-button {
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+  html body .catalent .main-content .solutionfinder .reset {
+    padding-right: 0px;
+    margin-right: 40px;
+  }
+  html body .catalent .main-content .solutionfinder #result_button_short {
+    display: inline-block;
+  }
+  html body .catalent .main-content .solutionfinder #result_button_long {
+    display: none;
+  }
+  html body .catalent .main-content .solutionfinder .back-arrow {
+    margin: 0;
+    padding: 0 3px 0 0;
+  }
+  html body .catalent .main-content .solutionfinder .nav_blue_button {
+    min-width: 0;
+  }
+  html body .catalent .main-content .solutionfinder .info {
+    display: inline-block;
+  }
+  html body .catalent .main-content .solutionfinder .skip {
+    display: none;
+  }
+  html body .catalent .main-content .solutionfinder .warning-reference {
+    display: none;
+  }
+}
+@media screen and (max-width: 980px) and (min-width: 768px) {
+  html body .catalent .main-content .solutionfinder .no_tablet {
+    display: none;
+  }
+  html body .catalent .main-content .solutionfinder .only_tablet {
+    display: block;
+  }
+  html body .catalent .main-content .solutionfinder .not_desktop {
+    display: block;
+  }
+  html body .catalent .main-content .solutionfinder .only_smartphone {
+    display: none;
+  }
+  html body .catalent .main-content .solutionfinder .only_desktop {
+    display: none;
+  }
+  html body .catalent .main-content .solutionfinder .margin_bottom_40_smartphone {
+    margin-bottom: 40px;
+    display: none;
+  }
+  html body .catalent .main-content .solutionfinder .margin_bottom_30_tablet_desktop {
+    margin-bottom: 30px;
+    display: block;
+  }
+  html body .catalent .main-content .solutionfinder .margin_bottom_20_smartphone {
+    margin-bottom: 20px;
+    display: none;
+  }
+  html body .catalent .main-content .solutionfinder .margin_bottom_30_tablet_desktop {
+    margin-bottom: 30px;
+    display: block;
+  }
+  html body .catalent .main-content .solutionfinder #result_button_short {
+    display: none;
+  }
+  html body .catalent .main-content .solutionfinder #result_button_long {
+    display: inline-block;
+  }
+  html body .catalent .main-content .solutionfinder .header_section .header_left {
+    padding: 0 20px;
+  }
+  html body .catalent .main-content .solutionfinder .header_section .header_right {
+    padding: 0 20px;
+  }
+  html body .catalent .main-content .solutionfinder .item-name {
+    width: 75%;
+  }
+  html body .catalent .main-content .solutionfinder .item-name-expended {
+    display: block;
+  }
+  html body .catalent .main-content .solutionfinder .answer-box .choices-row {
+    float: none;
+  }
+  html body .catalent .main-content .solutionfinder .answer-box .choice {
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  html body .catalent .main-content .solutionfinder .answer-box .split23,
+  html body .catalent .main-content .solutionfinder .answer-box .split33 {
+    width: 32.3%;
+    margin-left: 1%;
+  }
+  html body .catalent .main-content .solutionfinder .answer-box .split24 {
+    width: 24%;
+    margin-left: 1%;
+  }
+  html body .catalent .main-content .solutionfinder .answer-box .split1-2third {
+    width: 65.6%;
+    margin-left: 1%;
+  }
+  html body .catalent .main-content .solutionfinder .back-button,
+  html body .catalent .main-content .solutionfinder .reset {
+    padding-left: 0px;
+    margin-left: 0px;
+    width: auto;
+  }
+  html body .catalent .main-content .solutionfinder .back-button {
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+  html body .catalent .main-content .solutionfinder .reset {
+    padding-right: 0px;
+    margin-right: 40px;
+  }
+}
+html body .catalent .main-content .solutionfinder #page1 {
+  display: none;
+}
+html body .catalent .main-content .solutionfinder #page1 .dev_form p {
+  display: inline-block;
+  font-size: 11px;
+  color: #000;
+  line-height: 18px;
+}
+html body .catalent .main-content .solutionfinder #page1 .dev_form div {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+}
+html body .catalent .main-content .solutionfinder #page1 .dev_form div span.error {
+  display: none;
+  margin-left: 402px;
+}
+html body .catalent .main-content .solutionfinder #page1 .dev_form > div {
+  width: 100%;
+}
+html body .catalent .main-content .solutionfinder #page1 .input_page1 {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 5.5px 5px;
+  width: 150px;
+  box-sizing: border-box;
+  font-weight: 300;
+  color: #000 !important;
+}
+html body .catalent .main-content .solutionfinder #page1 .form_label_page1 {
+  width: 400px;
+  font-size: 12px;
+  color: #333;
+  line-height: 18px;
+}
+@media screen and (max-width: 767px) {
+  html body .catalent .main-content .solutionfinder #page1 .dev_form div {
+    width: auto;
+    display: block;
+  }
+  html body .catalent .main-content .solutionfinder #page1 .dev_form div span.error {
+    margin-left: 0;
+  }
+  html body .catalent .main-content .solutionfinder #page1 .dev_form > div {
+    width: auto;
+  }
+}
+html body .catalent .main-content .solutionfinder #page2 {
+  display: none;
+}
+html body .catalent .main-content .solutionfinder #page3 {
+  display: none;
+}
+html body .catalent .main-content .solutionfinder #page4 {
+  display: none;
+}
+html body .catalent .main-content .solutionfinder #page5 {
+  display: none;
+}
+html body .catalent .main-content .solutionfinder #page6 {
+  display: none;
+}
+html body .catalent .main-content .solutionfinder .input_page6 {
+  width: 280px;
+  display: block;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 5px 0;
+  padding: 10.5px 6px !important;
+  font-weight: 300;
+  color: #000000 !important;
+}
+html body .catalent .main-content .solutionfinder .form_item {
+  margin-bottom: 10px;
+  display: block !important;
+}
+html body .catalent .main-content .solutionfinder .form_item .two-fields {
+  display: inline-block;
+}
+html body .catalent .main-content .solutionfinder .form_label_page6 {
+  width: 100%;
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+  margin-top: 30px;
+}
+html body .catalent .main-content .solutionfinder .form-element-instruction {
+  font-size: 10px;
+}
+html body .catalent .main-content .solutionfinder .error,
+html body .catalent .main-content .solutionfinder .firstname_error,
+html body .catalent .main-content .solutionfinder .lastname_error,
+html body .catalent .main-content .solutionfinder .error-1,
+html body .catalent .main-content .solutionfinder .error-2 {
+  display: none;
+}
+html body .catalent .main-content .solutionfinder .error-submit {
+  display: none;
+}
+html body .catalent .main-content .solutionfinder #page6 .form_label {
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  html body .catalent .main-content .solutionfinder .error {
+    margin-left: 0px;
+  }
+  html body .catalent .main-content .solutionfinder .input_page6 {
+    width: 100%;
+  }
+}
+html body .catalent .main-content .solutionfinder .header_section_result {
+  background-color: #fff;
+  white-space: nowrap;
+}
+html body .catalent .main-content .solutionfinder .header_right_result {
+  text-align: right;
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+}
+html body .catalent .main-content .solutionfinder .header_left_result {
+  padding-left: 10px;
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+}
+html body .catalent .main-content .solutionfinder .print {
+  font-size: 12px;
+  margin-right: 10px;
+  color: #0f6cab;
+  font-weight: 500;
+}
+html body .catalent .main-content .solutionfinder .email {
+  font-size: 12px;
+  color: #0f6cab;
+  font-weight: 500;
+}
+html body .catalent .main-content .solutionfinder .accordion {
+  margin-bottom: 10px;
+  position: relative;
+  border: #e9ebed solid 1px;
+  width: 100%;
+}
+html body .catalent .main-content .solutionfinder .accordion-best-results {
+  display: none;
+}
+html body .catalent .main-content .solutionfinder .top-accordion-bottom-margin {
+  margin-bottom: 30px;
+}
+html body .catalent .main-content .solutionfinder .accordion-top-title {
+  display: inline-block;
+  font-size: 15px;
+  color: #0069aa;
+  width: 100%;
+  padding: 0px 0 0 0px;
+  box-sizing: border-box;
+  line-height: 24px;
+  font-weight: 500;
+}
+html body .catalent .main-content .solutionfinder .accordion-toggle {
+  cursor: pointer;
+  padding: 18px 30px;
+  background-color: #f7f8fa;
+  -webkit-print-color-adjust: exact;
+  white-space: nowrap;
+}
+html body .catalent .main-content .solutionfinder .accordion-top-left {
+  width: 70%;
+}
+html body .catalent .main-content .solutionfinder .accordion-top-right {
+  text-align: right;
+  width: 30%;
+}
+html body .catalent .main-content .solutionfinder .accordion-content {
+  display: none;
+  padding: 30px 40px 10px 40px;
+}
+html body .catalent .main-content .solutionfinder .accordion-content-default {
+  display: block;
+}
+html body .catalent .main-content .solutionfinder .accordion-image-plus {
+  width: 12px;
+  height: 12px;
+  text-align: right;
+  margin-right: 3px;
+}
+html body .catalent .main-content .solutionfinder .accordion-image-minus {
+  width: 12px;
+  height: 2px;
+  text-align: right;
+  margin-right: 3px;
+  vertical-align: 5px;
+}
+html body .catalent .main-content .solutionfinder .toggle_click_area {
+  display: inline-block;
+}
+html body .catalent .main-content .solutionfinder .accordion-toggle p {
+  display: inline-block;
+  vertical-align: middle;
+  width: 88%;
+}
+html body .catalent .main-content .solutionfinder .accordion a {
+  text-decoration: none;
+}
+html body .catalent .main-content .solutionfinder .small_icone {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: right;
+  width: 10%;
+}
+html body .catalent .main-content .solutionfinder .accordion-bottom-left {
+  display: inline-block;
+  line-height: 20px;
+  font-size: 15px;
+  color: #0069aa;
+  width: 90%;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+html body .catalent .main-content .solutionfinder .accordion-bottom-right {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: right;
+  width: 10%;
+  vertical-align: middle;
+}
+html body .catalent .main-content .solutionfinder .accordion-bottom-toggle {
+  cursor: pointer;
+  padding: 5px 20px 0px 5px;
+  background-color: #f7f8fa;
+  -webkit-print-color-adjust: exact;
+  white-space: nowrap;
+  font-weight: 500;
+}
+html body .catalent .main-content .solutionfinder .accordion-bottom-content {
+  display: none;
+  padding: 0px 70px 22px 70px;
+  background-color: #f7f8fa;
+  -webkit-print-color-adjust: exact;
+}
+html body .catalent .main-content .solutionfinder .accordion-bottom-left p {
+  display: inline-block;
+  width: 75%;
+  white-space: normal;
+  vertical-align: middle;
+}
+html body .catalent .main-content .solutionfinder .accordion-bottom-content a p {
+  color: #000;
+}
+html body .catalent .main-content .solutionfinder .solution_icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  padding-top: 0px;
+  vertical-align: middle;
+}
+html body .catalent .main-content .solutionfinder .result_tableTitle {
+  font-size: 13px;
+  font-weight: normal;
+  color: #fff;
+}
+html body .catalent .main-content .solutionfinder .result_tableTitle p {
+  font-size: 13px;
+  font-weight: normal;
+  color: #fff;
+  font-weight: 500;
+}
+html body .catalent .main-content .solutionfinder .odd td,
+html body .catalent .main-content .solutionfinder .even td {
+  font-size: 11px;
+  font-weight: normal;
+  color: #000;
+}
+html body .catalent .main-content .solutionfinder .tables {
+  width: 100%;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+html body .catalent .main-content .solutionfinder #left_column {
+  width: calc(50% - 10px);
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+html body .catalent .main-content .solutionfinder #right_column {
+  width: calc(50% - 10px);
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+html body .catalent .main-content .solutionfinder table.result_table th,
+html body .catalent .main-content .solutionfinder table.result_table td {
+  border: 1px solid #fff;
+  text-align: center;
+}
+html body .catalent .main-content .solutionfinder table.result_table td {
+  width: 50%;
+  padding: 0 3px;
+  line-height: 14px;
+  overflow-x: auto;
+  white-space: normal;
+}
+html body .catalent .main-content .solutionfinder .accordion-title {
+  margin-left: -5px;
+  max-width: 75%;
+}
+html body .catalent .main-content .solutionfinder .result_table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+html body .catalent .main-content .solutionfinder tr {
+  height: 42px;
+}
+html body .catalent .main-content .solutionfinder th {
+  background-color: #5b3b8e;
+  -webkit-print-color-adjust: exact;
+}
+html body .catalent .main-content .solutionfinder .odd {
+  background-color: #e8e5f0;
+  -webkit-print-color-adjust: exact;
+}
+html body .catalent .main-content .solutionfinder .even {
+  background-color: #f8f8fa;
+  -webkit-print-color-adjust: exact;
+}
+html body .catalent .main-content .solutionfinder #close_summary {
+  display: none;
+  clear: both;
+}
+html body .catalent .main-content .solutionfinder .column_in_bold {
+  font-weight: 500;
+}
+html body .catalent .main-content .solutionfinder .chart {
+  margin-bottom: 25px;
+}
+html body .catalent .main-content .solutionfinder .graph-container {
+  /*background: url("../images/graph-desktop.png") no-repeat; */
+  -webkit-print-color-adjust: exact;
+  width: 643px;
+  height: 338px;
+  margin: 0 auto;
+  position: relative;
+}
+html body .catalent .main-content .solutionfinder .graph {
+  position: absolute;
+  width: 594px;
+  height: 297px;
+  left: 35px;
+  top: 40px;
+}
+html body .catalent .main-content .solutionfinder .nograph {
+  display: block;
+  padding: 10px;
+}
+html body .catalent .main-content .solutionfinder .graph-frame {
+  position: relative;
+  display: none;
+}
+html body .catalent .main-content .solutionfinder .star {
+  position: absolute;
+  width: 18px;
+  height: 17px;
+  background: url("../images/star.png") no-repeat;
+  -webkit-print-color-adjust: exact;
+}
+html body .catalent .main-content .solutionfinder .graph_caption {
+  font-size: 10px;
+  color: #999;
+  line-height: 20px;
+  margin-left: 28px;
+}
+html body .catalent .main-content .solutionfinder .small_arrow {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+html body .catalent .main-content .solutionfinder .optiFormSolutionSuite {
+  display: none;
+}
+html body .catalent .main-content .solutionfinder .services {
+  display: block;
+  width: 100%;
+  font-size: 0;
+}
+html body .catalent .main-content .solutionfinder .services-left {
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+html body .catalent .main-content .solutionfinder .services-right {
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+html body .catalent .main-content .solutionfinder .services-box {
+  background-color: #f7f8fa;
+  -webkit-print-color-adjust: exact;
+  width: 100%;
+  color: #0069aa;
+  line-height: 24px;
+  margin-bottom: 20px;
+  padding: 11px 20px;
+  box-sizing: border-box;
+}
+html body .catalent .main-content .solutionfinder .services-box a {
+  text-decoration: none;
+}
+html body .catalent .main-content .solutionfinder .service-link {
+  display: inline-block;
+  font-size: 13px;
+  color: #0069aa;
+  line-height: 24px;
+}
+html body .catalent .main-content .solutionfinder .call_text {
+  display: inline-block;
+  vertical-align: middle;
+  padding-bottom: 50px;
+  color: #000;
+  line-height: 22px;
+  max-width: 234px;
+}
+html body .catalent .main-content .solutionfinder .talkToExpert {
+  max-width: 277px;
+  color: #0069aa;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  margin: 0 auto 0 auto;
+  padding: 60px 0 20px 0;
+  line-height: 24px;
+  font-weight: 500;
+}
+@media screen and (max-width: 980px) {
+  html body .catalent .main-content .solutionfinder .accordion {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  html body .catalent .main-content .solutionfinder .accordion-title {
+    margin-left: -5px;
+    max-width: 75%;
+  }
+  html body .catalent .main-content .solutionfinder #close_summary {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    clear: both;
+    font-size: 13px;
+    color: #0069aa;
+    margin-top: 20px;
+  }
+  html body .catalent .main-content .solutionfinder .tables {
+    width: inherit;
+    margin: 0 0;
+  }
+  html body .catalent .main-content .solutionfinder #left_column {
+    float: none;
+    width: inherit;
+    display: inherit;
+    margin: auto;
+  }
+  html body .catalent .main-content .solutionfinder #right_column {
+    float: none;
+    width: inherit;
+    display: inherit;
+    margin: auto;
+  }
+  html body .catalent .main-content .solutionfinder .graph-container {
+    background-image: url("../images/graph-tablet.png") no-repeat;
+    -webkit-print-color-adjust: exact;
+    width: 644px;
+    height: 338px;
+  }
+  html body .catalent .main-content .solutionfinder .graph {
+    width: 593px;
+    height: 298px;
+    left: 35px;
+    top: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  html body .catalent .main-content .solutionfinder .header_section_result {
+    background-color: #f6f6f6;
+    -webkit-print-color-adjust: exact;
+  }
+  html body .catalent .main-content .solutionfinder .header_right_result {
+    padding: 26px 0 6px 0;
+  }
+  html body .catalent .main-content .solutionfinder .graph-container {
+    background: url("../images/graph-mobile.png") no-repeat;
+    -webkit-print-color-adjust: exact;
+    width: 284px;
+    height: 262px;
+  }
+  html body .catalent .main-content .solutionfinder .graph {
+    width: 224px;
+    height: 188px;
+    left: 42px;
+    top: 49px;
+  }
+  html body .catalent .main-content .solutionfinder .graph_caption {
+    width: 240px;
+  }
+  html body .catalent .main-content .solutionfinder .print,
+  html body .catalent .main-content .solutionfinder .email {
+    font-size: 12px;
+  }
+  html body .catalent .main-content .solutionfinder .services-left {
+    width: 100%;
+    padding-right: 0;
+  }
+  html body .catalent .main-content .solutionfinder .services-right {
+    width: 100%;
+    padding-left: 0;
+  }
+  html body .catalent .main-content .solutionfinder .accordion-top-title {
+    white-space: normal;
+    line-height: 22px;
+  }
+  html body .catalent .main-content .solutionfinder .accordion-content {
+    padding: 10px 10px 20px 10px;
+  }
+  html body .catalent .main-content .solutionfinder .accordion-bottom-content {
+    padding: 10px 20px 30px 20px;
+  }
+  html body .catalent .main-content .solutionfinder .top-accordion-bottom-margin {
+    margin-bottom: 40px;
+  }
+  html body .catalent .main-content .solutionfinder .result_table {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  html body .catalent .main-content .solutionfinder .result_tableTitle p {
+    line-height: 24px;
+  }
+}
+html body .catalent .main-content .solutionfinder #screen-intro {
+  color: #000;
+  display: block;
+  text-align: center !important;
+  padding-bottom: 30px;
+}
+.container {
+  text-align: unset !important;
+}
+html body .catalent .main-content .solutionfinder .main-title {
+  display: inline-block;
+  font-size: 24px;
+  color: #0069aa;
+  line-height: 32px;
+  max-width: 500px;
+}
+html body .catalent .main-content .solutionfinder .get-started {
+  margin-left: auto;
+  margin-right: auto;
+}
+html body .catalent .main-content .solutionfinder .intro-text {
+  margin: 0px auto 20px auto;
+  text-align: center;
+  max-width: 500px;
+}
+html body .catalent .main-content .solutionfinder .part1 {
+  padding-bottom: 60px;
+  padding-top: 20px;
+}
+html body .catalent .main-content .solutionfinder .part3 {
+  background-color: #69c;
+  color: #fff;
+  font-size: 24px;
+  line-height: 32px;
+  padding-bottom: 90px;
+  padding-top: 30px;
+}
+html body .catalent .main-content .solutionfinder .part3 p {
+  margin: 40px auto 0 auto;
+  max-width: 690px;
+}
+html body .catalent .main-content .solutionfinder .part2,
+html body .catalent .main-content .solutionfinder .part4 {
+  background-color: #f6f6f6;
+  max-width: 100%;
+}
+html body .catalent .main-content .solutionfinder .part2 .section_blue_title,
+html body .catalent .main-content .solutionfinder .part4 .section_blue_title {
+  font-size: 20px;
+  color: #0069aa;
+  line-height: 28px;
+  padding-bottom: 20px;
+}
+html body .catalent .main-content .solutionfinder .part2 .section_text,
+html body .catalent .main-content .solutionfinder .part4 .section_text {
+  color: #000;
+  line-height: 22px;
+}
+html body .catalent .main-content .solutionfinder .columns_section2 {
+  width: 100%;
+  background: url("../images/Homepage_step1.png") no-repeat;
+  -webkit-print-color-adjust: exact;
+  background-size: 62% auto;
+  background-position: center left;
+  text-align: left;
+}
+html body .catalent .main-content .solutionfinder .section2_right {
+  margin: 0px 0px 0px auto;
+  padding: 133px 0;
+  max-width: 255px;
+}
+html body .catalent .main-content .solutionfinder .part4 {
+  padding-top: 30px;
+}
+html body .catalent .main-content .solutionfinder .columns_section4 {
+  width: 100%;
+  background: url("../images/Homepage_step2.png") no-repeat;
+  -webkit-print-color-adjust: exact;
+  background-size: 62% auto;
+  background-position: bottom right;
+  text-align: left;
+}
+html body .catalent .main-content .solutionfinder .section4_left {
+  margin: 0px auto 0px 0;
+  padding: 85px 0;
+  max-width: 255px;
+}
+@media all and (max-width: 980px) {
+  html body .catalent .main-content .solutionfinder .caption {
+    font-size: 12px;
+  }
+  html body .catalent .main-content .solutionfinder .intro-text {
+    margin: 0px auto 20px auto;
+  }
+  html body .catalent .main-content .solutionfinder .section2_right {
+    margin: 0 0 0 auto;
+    padding: 60px 0;
+    max-width: 220px;
+  }
+  html body .catalent .main-content .solutionfinder .section4_left {
+    margin: 0 auto 0 0;
+    padding: 60px 0;
+    max-width: 220px;
+  }
+}
+@media all and (max-width: 767px) {
+  html body .catalent .main-content .solutionfinder .caption {
+    font-size: 10px;
+  }
+  html body .catalent .main-content .solutionfinder .main-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  html body .catalent .main-content .solutionfinder .part1 {
+    padding-bottom: 40px;
+    padding-top: 0px;
+  }
+  html body .catalent .main-content .solutionfinder .columns_section2 {
+    background-size: auto 163px;
+    background-position: center 40px;
+  }
+  html body .catalent .main-content .solutionfinder .section2_right {
+    margin: 0px;
+    padding: 230px 0 40px 0;
+    max-width: none;
+  }
+  html body .catalent .main-content .solutionfinder .section4_left {
+    margin: 0px;
+    padding: 20px 0 178px 0;
+    max-width: none;
+  }
+  html body .catalent .main-content .solutionfinder .part3 {
+    padding-bottom: 60px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  html body .catalent .main-content .solutionfinder .part3 p {
+    margin-top: 30px;
+  }
+  html body .catalent .main-content .solutionfinder .columns_section4 {
+    background-size: auto 163px;
+    background-position: center 146px;
+  }
+  html body .catalent .main-content .solutionfinder .part2 .section_blue_title,
+  html body .catalent .main-content .solutionfinder .part4 .section_blue_title {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  html body .catalent .main-content .solutionfinder .part4 .section_blue_title {
+    padding-bottom: 10px;
+  }
+}
+
+html body .catalent .main-content .solutionfinder ul.breadcrumb {
+  list-style: none;
+  padding-bottom: 24px;
+  padding-top: 14px;
+}
+html body .catalent .main-content .solutionfinder ul.breadcrumb li {
+  display: inline;
+}
+html body .catalent .main-content .solutionfinder ul.breadcrumb li:first-child::after {
+  content: "»";
+  padding: 0 1px;
+}
+html body .catalent .main-content .solutionfinder ul.breadcrumb li {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(38, 28, 2);
+}
+html body .catalent .main-content .solutionfinder ul.breadcrumb li a {
+  color: #016ba9 !important;
+}
+
+
+/* FIXES FOR WORDPRESS */
+.catalent .container::before { background: none !important; }
+@media screen and (min-width: 768px) {
+  .catalent-optiform {margin-top: 30px;}
+}
+.catalent .main-content .solutionfinder {
+  font-weight: 400 !important;
+}
+.catalent .main-content .solutionfinder input[type="text"] {
+  padding: 6.5px 5px !important;
+  font-size: 13px !important;
+  color: #000 !important;
+  font-weight: 400 !important;
+}

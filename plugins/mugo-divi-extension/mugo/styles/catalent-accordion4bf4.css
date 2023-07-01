@@ -1,0 +1,82 @@
+.ctl-accordion . accordion-item {
+    border: 1px solid #d9d9d9;
+    background-color: #ffffff;
+}
+.ctl-accordion .ctl-accordion-button {
+    background-color: #ffffff;
+    padding: 20px 60px 20px 20px;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #00599F;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+.ctl-accordion .ctl-accordion-button:hover {
+    background-color: #fafafa;
+    color: #00599F;
+}
+
+.ctl-accordion .ctl-accordion-button.collapsed {
+    background-color: #f4f4f4;
+    color: #016ba9;
+}
+.ctl-accordion .ctl-accordion-button:after,
+.ctl-accordion .ctl-accordion-button:before {
+    font-family: 'mugo-divi-extension' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+.ctl-accordion .ctl-accordion-button:after {
+    content: "\e904";
+    opacity: 1;
+    transform: rotateZ(0deg);
+    -ms-transform: rotate(0deg);
+}
+.ctl-accordion .ctl-accordion-button:before {
+    content: "\e905";
+    opacity: 0;
+    transform: rotateZ(-90deg);
+    -ms-transform: rotate(-90deg);
+}
+.ctl-accordion .ctl-accordion-button.collapsed:after {
+    opacity: 0;
+    transform: rotateZ(90deg);
+    -ms-transform: rotate(90deg);
+}
+.ctl-accordion .ctl-accordion-button.collapsed:before {
+    opacity: 1;
+    transform: rotateZ(0deg);
+    -ms-transform: rotate(0deg);
+}
+.ctl-accordion .accordion-body {
+    padding: 0 20px 20px 20px;
+}
+.ctl-accordion.accordion-open {
+    border: 1px solid #d9d9d9;
+}
+.ctl-accordion {
+    border: 1px solid transparent;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}

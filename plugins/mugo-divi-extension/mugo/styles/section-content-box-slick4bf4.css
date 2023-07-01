@@ -1,0 +1,94 @@
+.mugo_section_content_box .slick {
+    min-height: 300px;
+    height: 100%;
+}
+
+.mugo_section_content_box .slick .slick-list {
+    height: 100%;
+}
+
+.mugo_section_content_box .slick .slick-track {
+    min-height: 300px;
+    height: 100%;
+    display: flex;
+    align-content: stretch;
+}
+
+.mugo_section_content_box .mugo_box .slider .slick .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.mugo_section_content_box .mugo_box .slider .autoplay {
+    position: absolute;
+    left: 26.5px;
+    top: 26.5px;
+    z-index: 10;
+}
+
+.mugo_section_content_box .mugo_box .slider .autoplay .pause,
+.mugo_section_content_box .mugo_box .slider .autoplay .play {
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    background: white;
+    border: 1px solid white;
+    border: 2px solid #00599F;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mugo_section_content_box .mugo_box .slider .dots {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    top: 26.5px;
+    left: 70px;
+    z-index: 10;
+}
+
+.mugo_section_content_box .mugo_box .slider .dots button {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00599F;
+    margin: 3px;
+    cursor: pointer;
+
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+.mugo_section_content_box .mugo_box .slider .dots button.active {
+    margin: 1px 0;
+    width: 26px;
+    height: 24px;
+}
+
+.mugo_section_content_box .mugo_box .slider .prev,
+.mugo_section_content_box .mugo_box .slider .next {
+    position: absolute;
+    top: 50%;
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    background: white;
+    border: 1px solid white;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mugo_section_content_box .mugo_box .slider .prev {
+    left: 0;
+}
+
+.mugo_section_content_box .mugo_box .slider .next {
+    right: 0;
+}
